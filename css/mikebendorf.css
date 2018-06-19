@@ -1,0 +1,108 @@
+
+	
+	html {
+		/*Free Wallpapers | ESA/Hubble www.spacetelescope.org*/
+	    background: url(../img/stars2.jpg) no-repeat center center fixed; 
+	    background-size: cover; 
+		padding: 100px;
+		
+    }
+	h1{
+		color: yellow;
+	}
+	@font-face{
+		/*Google Fonts: fonts.google.com*/
+		font-family: spaceJam;
+		src: url(../fonts/Orbitron-Regular.ttf);
+	}
+	@font-face{
+		/*Google Fonts: fonts.google.com*/
+		font-family: title;
+		src: url(../fonts/RubikMonoOne-Regular.ttf);
+	}
+	 /* center aligned black text */  
+	.center {
+		font-family: spaceJam;
+		text-align: center;
+	}
+	
+
+	
+	/* regular black center aligned font for paragraph */
+	p {
+		font-family: spaceJam;
+		text-align: center;
+		color: white
+	}
+	p b{
+		font-family: title;
+		text-decoration: underline overline;
+		color: orange
+	}
+	b ~ b{
+		font-family: spaceJam;
+		color:yellow;
+	}
+	
+
+	/* outer container */
+    #outerContainer {
+		/* background-image: linear-gradient(to right, lightblue, darkblue); */
+        
+        padding: 30px;
+		margin-left: auto;
+		margin-right: auto;
+    }
+	
+	/* inner container */
+    .innerContainer {
+        background-image: linear-gradient(to left, transparent, rgb(189, 162, 162));
+        padding: 20px;
+		margin-left: auto;
+		margin-right: auto;
+    }
+	
+	img{
+		margin-top: 20px;
+		border: 10px solid blue
+		
+	}
+
+
+
+	ul {
+		list-style-type: none;
+		margin: 0;
+		padding: 0;
+		overflow: hidden;
+		border: 1px solid #bbb;
+	}
+
+	li {
+		float: left;
+	}
+	a{
+		color: #000;
+	}
+	a:hover{
+		color: yellow;
+	}
+	li a {
+		display: block;
+		color: #666;
+		text-align: center;
+		padding: 15px 15px;
+		text-decoration: none;
+		font-family: title;
+		color: lightblue
+		
+	}
+
+	li a:hover:not(.active) {
+		background-color: #bbb;
+	}
+
+	li a.active {
+		color: white;
+		background-color: darkblue;
+	}

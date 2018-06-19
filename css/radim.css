@@ -1,0 +1,153 @@
+/* Author: Radim */
+
+html {
+	/* stars.jpg is 'Ancient Globular Star Cluster NGC 6397' 
+	from http://imgsrc.hubblesite.org/hu/db/images/hs-2007-42-c-1024_wallpaper.jpg 
+	used in accordance with http://hubblesite.org/about_us/copyright.php 
+	"... it may be freely used as in the public domain ... NASA and STScI be given appropriate acknowledgement." 
+	*/
+	background: url(http://bcitcomp.ca/students/rbacinschi/img/stars.jpg) no-repeat center center fixed; 
+	background-size: cover; 
+	padding: 100px;
+}
+	
+body{
+	background-color: green;
+	margin: auto;
+	width: 80%
+}
+
+@font-face{
+	font-family: lcd;
+	src: url(../fonts/lcd.ttf);
+}
+	
+h1{
+	text-decoration: underline dotted white;
+	font-family: lcd;
+}
+
+h2{
+	font-family: lcd;
+}
+
+a:link {
+	color: rgb(4, 0, 255);
+}
+a:hover {
+	color: rgb(255, 0, 0);
+}
+
+div.container {
+	background-color: green;
+} 
+
+p {
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+p:first-letter {
+    font-size: 3rem;
+}
+
+h2 > span {
+	text-decoration: underline black;
+}
+
+p + cite {
+	text-decoration: underline overline black;
+}
+
+a ~ figcaption {
+	text-align: center;
+}
+
+img[alt] {
+	border: 10px solid;
+	border-color: blue;
+}
+
+header, footer {
+	padding: 1em;
+	color: white;
+	background-color: black;
+	text-align: center;
+}
+
+nav {
+	border-right: 1px solid gray;
+	float: left;
+	padding: 1em;
+	background-color: NavajoWhite;
+	height: inherit;
+	font-weight: bold;
+	font-size: 10pt;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+}
+
+nav ul {
+	list-style-type: none;
+	padding: 1%;
+}
+
+nav ul li a {
+    background: white;
+	display: block;
+	padding: 0.5em 0.5em 0.5em 0.5em;
+	border-width: 2px;
+    border-style: solid;
+	border-color: #ffe #aaab9c #ccc #fff;
+	color: black;
+    text-decoration: none;
+}
+ 
+nav ul a {
+	text-decoration: none;
+}
+
+nav ul li a:hover {
+	background: transparent;
+	border-color: #aaab9c #fff #fff #ccc;
+}
+
+article{
+	margin-left: 200px;
+	padding: 1em;
+}
+
+section {
+	overflow: hidden;
+	height: 700px;
+}
+
+
+figure.right{
+	float: right;
+	margin-top: 90px;
+}
+
+#potato{
+	width: 400px;
+	margin: auto;
+	margin-top: 80px;
+}
+
+polygon{
+	stroke:black;
+	fill:yellow;
+	color: #000;
+}
+
+text{
+	fill:black;
+	font-family:Arial;
+	font-size:41.5px;
+	font-weight:bold;
+}
+
+#svgBg{
+	fill: none; 
+	stroke: none;
+}
+
+

@@ -1,0 +1,119 @@
+/* Author: Mike Bendorf */
+html{
+
+}
+body{
+  /* border: 50px solid rgb(192, 187, 187);
+  border-bottom: 50px solid rgb(192, 187, 187); */
+  background-color:#00b4ff;
+  background: linear-gradient(#00b4ff,white);  
+  background-repeat: no-repeat;
+  margin-right: auto;
+  margin-left: auto;
+  width: 80%;
+
+}
+h1{
+  text-decoration:underline;
+  font-family:cursive;
+  color: #9ce1ff;
+ 
+}
+
+a:link {
+  color: rgb(4, 0, 255);
+}
+a:hover {
+  color: rgb(255, 0, 0);
+}
+
+div.container {
+  background-image: url(../images/grey_bg.jpg);
+  
+  line-height: 1.4em;
+  box-shadow: 12px 5px 10px rgba(68,68,68,0.6);
+} 
+article{
+  /* margin-left: 200px; */
+  /* padding: 2.2em; */
+  border-left: 201px solid white;
+}
+.delimiter{
+  border-left: 1px solid;
+  padding: 2.2em; 
+}
+
+nav {
+  width: 168px;
+  height: 50%;
+  margin: 0;
+  
+  float: left;
+  padding: 1em;
+  background-color: white;
+  font-weight: bold;
+  /* padding-bottom: 30% */
+}
+
+img{
+  border: 6px solid;
+}
+
+header, footer {
+  padding: 1.5em;
+  color: white;
+  background-color: rgb(0, 0, 0);
+  clear: left;
+  text-align: center;
+  
+}
+
+
+
+
+nav ul {
+  list-style-type: none;
+  padding-top: 25px;
+  padding-right: 10px;
+  padding-left: 15px;
+}
+ 
+nav ul a {
+  text-decoration: none;
+}
+nav li{
+  padding: 5px 0;
+  
+}
+
+figure.right{
+  float: right;
+  margin-top: 90px;
+}
+
+#potato{
+  width: 55%;
+  margin: auto;
+  margin-top: 80px;
+}
+polygon{
+  stroke:black;
+  fill:sienna;
+  color: #000;
+}
+text{
+  fill:black;
+  font-family:Arial;
+  font-size:41.5px;
+  font-weight:bold;
+}
+
+#svgBg{
+  fill: none; 
+  stroke: none;
+}
+
+span{
+
+  background-color: #ffffff8f;
+}

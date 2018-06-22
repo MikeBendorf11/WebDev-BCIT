@@ -59,7 +59,7 @@ th {
   color: rgb(226, 226, 226);
 }
 
-#container{background-color: white;}
+#container{background: white;}
 
 header{
   display: flex;
@@ -103,7 +103,7 @@ header h1 i:nth-child(4){
   font-size: 1.5vw;  
 }
 
-content{
+#container{
   flex: 3.5;
   padding: 0px 20px;
 }

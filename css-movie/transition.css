@@ -1,0 +1,32 @@
+@keyframes transition{
+  0%{ opacity: 0;}
+  100%{ opacity: 1;}
+}
+@keyframes loop{
+  0%{animation: transition}
+}
+
+#container figure{
+  width: 60%;
+}
+
+#container figure .defaultGif{
+  float: left;
+  width: 100%;
+  margin-right: 10px;
+  
+}
+
+.gifCont{
+  float: none;
+  position: relative;
+  
+}
+.gifCont img{
+  position: absolute;
+  right:0;
+  max-width: 100%;
+  height: auto;
+  opacity: 0.5;
+}
+

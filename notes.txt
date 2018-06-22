@@ -24,3 +24,7 @@ https://fonts2u.com/army.font
 https://www.imdb.com
 
 http://www.boxofficemojo.com/movies/
+
+nvartscouncil.ca reel bg
+
+http://urbaninfluence.com/demos/keyframe-slider/demo1.html

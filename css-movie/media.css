@@ -1,0 +1,84 @@
+
+@media screen and (max-width:1080px){
+  body{width: 95%}
+} 
+@media screen and (max-width:900px){
+  #container2 > div{ left: 10%}
+  iframe{height: 80vw}
+}
+@media screen and (max-width:900px){
+  #container2 > div{ left: 5%}
+}
+@media screen and (max-width:749px){
+  #banner{height: 40vh}
+  header h1{ font-size: 40px}
+  h2{ font-size: 20px}
+  #container2 > div{ left: 0%}
+} 
+@media screen and (max-width:665px){
+  header{display: inline;}
+  header h1{
+    position: absolute; 
+    top:10%;
+  }
+  #container header h1 i{text-shadow: 0 0;}
+  #container header h1 i:nth-child(1){border-top: 5px solid #855e40}
+  header span{background-color: white}
+  #container2 > div{
+    width: 100%;
+    padding-bottom: 35%}
+  #banner{filter: brightness(1.5)}
+  iframe{width: 90vw}
+} 
+@media screen and (max-width:540px){
+  iframe{width: 85vw}
+}
+
+@media screen and (max-width:525px){
+  #banner{height: 35vh}
+  section{display: grid}
+  #container2{order:-1}
+
+  /*  Use of a css3 feature not listed in the homework (column-count)  */
+  aside {
+    max-width: 100%;
+    column-count: 2}
+}
+@media screen and (max-width:380px){
+  aside{column-count: 1;
+    display: grid}
+  aside span{padding-bottom: 20px;}
+  picture img{ display:block; margin: 0 auto; }
+  aside :not(picture){order: -1}
+}
+@media screen and (max-width:287px){
+  body{border: 0; padding: 0}
+  iframe{width: 95vw}
+}
+
+@media print{
+
+  body{ border: none;
+    
+  }
+  #banner, #map_container1, #map_container2, nav, picture, footer{display: none}
+  section {page-break-after: always;}
+  h1 {page-break-after: avoid;}
+  h2{ page-break-before: always;}
+  a[href^="http"]:after{
+    content: " (URL: " attr(href) ") ";  }
+
+  section{display: flex;
+    flex-flow: column;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 100%;}
+  table {table-layout: fixed; width: 100%}
+  tr, td{
+    display: block;
+overflow: hidden;
+text-overflow: ellipsis;
+width: 100%;
+  }
+  aside{order:3; margin-bottom: 25px}
+}

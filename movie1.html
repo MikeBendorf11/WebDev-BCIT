@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="css-movie/movie.css" rel="stylesheet" />
   <link rel="stylesheet" href="css-movie/transition.css"/>
+  <link rel="stylesheet" href="css-movie/media.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp"
     crossorigin="anonymous">
   <title>Layout 1</title>
@@ -20,44 +21,49 @@
   <div id="container">
     <header>
 
-      <img src="img-movie/banner.jpg" alt="monster" />
-      <h1>
-        <i>EDGE
+      <!-- <img src="img-movie/banner.jpg" alt="monster" /> -->
+      <div id="banner"></div>
+     
+      <h1> 
+        <i><span>EDGE</span>
           <br>
         </i>
-        <i>OF
+        <i><span>OF</span>
           <br>
         </i>
-        <i>TOMORROW
+        <i><span>TOMORROW</span>
           <br>
         </i>
-        <i>live, die, repeat</i>
+        <i><span>live, die, repeat</span></i>
       </h1>
     </header>
     <nav>
       <ul>
         <li>
-          <a href="Reason1.html">Why watch it?</a>
+          <a href="movie1.html">Why watch it?</a>
         </li>
         <li>
-          <a href="Reason2.html">Watch it now!</a>
+          <a href="movie2.html">Watch it now!</a>
         </li>
       </ul>
     </nav>
     <section>
       <aside>
 
-        <img src="img-movie/left.jpg" alt="Emily Blunt">
+        <picture>
+          <source srcset="img-movie/left_small.jpg"
+            media="(max-width:380px)">
+          <img src="img-movie/left.jpg" alt="Emily Blunt">
+        </picture>
 
         <h3>Emily Blunt</h3>
         <p>Emily Olivia Leah Blunt is a British actress known for her roles in The Devil Wears Prada (2006), The Young Victoria
           (2009), and The Girl on the Train (2016), among many others. Blunt was born on February 23, 1983, in Roehampton,
           South West London, England, the second of four children in the family of Joanna Mackie, a ...</p>
-        <a href="https://www.imdb.com/name/nm1289434/bio?ref_=nm_ov_bio_sm">See full bio</a>
-        <span>&nbsp;>></span>
+          <span><a href="https://www.imdb.com/name/nm1289434/bio?ref_=nm_ov_bio_sm">See full bio</a>&nbsp;>></span>
 
       </aside>
-      <div id="container">
+      <div id="container2">
         <h2>The Best Movie Ever</h2>
         <p>This movie a variety of action, humor, sci-fi and drama you will never forget. Personally I have watched 3 times,
           2 of which within the first week (something not usual for me)</p>
@@ -73,7 +79,7 @@
               <td>Release Date:
                 <b>
                   <nobr>
-                    <a href="http://www.boxofficemojo.com/schedule/?view=bydate&release=theatrical&date=2014-06-06&p=.htm">June 6, 2014</a>
+                    <a href="http://www.boxofficemojo.com/schedule/?view=bydate&release=theatrical&date=2014-06-06&p=.htm">June 6, 2014.</a>
                   </nobr>
                 </b>
               </td>
@@ -96,31 +102,18 @@
             </tr>
           </tbody>
         </table>
-
-        
-           
           <h2>Critical Response</h2>
-          <figure>
-              <img class="defaultGif" src="gifs/tumblr.gif" alt="Tom"/>
-              <div class="gifCont" >
-                  <img src="gifs/tumblr_n6gda3FCV01qblp8lo4_500.gif" alt="emily"/>
-                  <img src="gifs/tumblr_o5ftr9b3wB1s7xfipo5_500.gif" alt="monster">
-              </div>
-          </figure>
-          
-          <p>Edge of Tomorrow received largely positive reviews from critics,[89] who praised the humor, the aliens' design,
+  
+          <p>Edge of Tomorrow received largely positive reviews from critics, who praised the humor, the aliens' design,
               Cruise and Blunt's performances, and the time-loop premise's ability to remain fresh. However, some critics had
-              issues with the film's conclusion.[90] Based on 296 reviews, review aggregation website Rotten Tomatoes reports
+              issues with the film's conclusion. Based on 296 reviews, review aggregation website Rotten Tomatoes reports
               that 90% of critics gave the film a positive review, with a rating average of 7.5 out of 10. The website's critical
               consensus reads: "Gripping, well-acted, funny, and clever, Edge of Tomorrow offers entertaining proof that Tom
-              Cruise is still more than capable of shouldering the weight of a blockbuster action thriller."[91]</p>
-          <figure>
-              <img  class="defaultGif" src="gifs/tumblr.gif" alt="Tom"/>
-              <div class="gifCont" >
-                  <img src="gifs/edge-of-tomorrow-angel-of-verdun.gif" alt="emily"/>
-                  <img src="gifs/tumblr_o5ftr9b3wB1s7xfipo5_500.gif" alt="monster">
-              </div>
-          </figure>          
+              Cruise is still more than capable of shouldering the weight of a blockbuster action thriller."</p>
+              <div id="map_container1">
+                  <div id="map">
+                  </div>
+                </div>   
           <p>Chang said that the screenwriters,
               with the assistance of the editors, "tell their story in a breezy narrative shorthand (and at times, sleight-of-hand),
               transforming what must surely be an unbelievably tedious gauntlet for our hero into a deft, playful and continually
@@ -128,21 +121,30 @@
               handles it with a pleasing lightness of touch that extends to the proceedings as a whole." He also commended
               the visual effects of the "expertly designed Mimics" as well as Dion Beebe's cinematography.</p>
             
-             
+              <div id="map_container2">
+                  <div id="map">
+                  </div>
+                </div>   
         
 
 
           </div>
 
       <aside>
-        <img src="img-movie/right.jpg" alt="Tom Cruise">
+
+        <picture>
+            <source srcset="img-movie/right_small.jpg"
+            media="(max-width:380px)">
+          <img src="img-movie/right.jpg" alt="Tom Cruise">
+        </picture>
+
         <h3>Tom Cruise</h3>
         <p>
           In 1976, if you had told fourteen year-old Franciscan seminary student Thomas Cruise Mapother IV that one day in the not
           too distant future he would be Tom Cruise, one of the top 100 movie stars of all time, he would have probably grinned
           and told you that his ambition was to join the priesthood. Nonetheless, this sensitive, deeply religious ...</p>
-        <a href="https://www.imdb.com/name/nm0000129/bio?ref_=nm_ov_bio_sm">See full bio</a>
-        <span>>></span>
+          <span><a href="https://www.imdb.com/name/nm0000129/bio?ref_=nm_ov_bio_sm">See full bio</a>
+        >></span>
       </aside>
     </section>
 

@@ -1,32 +1,55 @@
-@keyframes transition{
-  0%{ opacity: 0;}
-  100%{ opacity: 1;}
+@keyframes changeImg1{
+  0%{ 
+    background-image: url(../gifs/tumblr_n6gda3FCV01qblp8lo4_500.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  35%{background: white;}
+  40%{ background-image: url(../gifs/tumblr_nd102dTHiq1r04g55o1_500.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;}
+  75%{background: white;}
+  80%{background-image: url(../gifs/tumblr_no9aczs6zd1qd479ro1_500.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;}
+  100%{background: white;}
 }
-@keyframes loop{
-  0%{animation: transition}
+@keyframes changeImg2{
+  0%{ background-image: url(../gifs/tumblr.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;
+  }
+  35%{background: white;}
+  40%{ background-image: url(../gifs/tumblr_o5ftr9b3wB1s7xfipo5_500.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;}
+  75%{background: white;}
+  80%{background-image: url(../gifs/edge-of-tomorrow-angel-of-verdun.gif);
+    background-size: 100%;
+    background-repeat: no-repeat;}
+  100%{background: white;}
 }
-
-#container figure{
-  width: 60%;
-}
-
-#container figure .defaultGif{
-  float: left;
-  width: 100%;
-  margin-right: 10px;
-  
-}
-
-.gifCont{
-  float: none;
+#container2 > div{
+  border: 10px solid transparent;
+  border-image: url(../img-movie/border.jpg) 50 round;
   position: relative;
-  
+  left: 17%;
+  width: 346px;
+  padding-bottom: 126px;
 }
-.gifCont img{
+#map_container1{
+  animation: changeImg1 linear 20s infinite;
+}
+#map_container2{    
+  margin-bottom: 20px;
+  animation: changeImg2 linear 20s infinite;
+  animation-delay: 3s;
+}
+
+#map {
   position: absolute;
-  right:0;
-  max-width: 100%;
-  height: auto;
-  opacity: 0.5;
+  top: 10%;
+  width: 100%;
+  height: 100%; 
 }
 

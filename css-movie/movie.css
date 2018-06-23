@@ -26,13 +26,16 @@ html {
   box-sizing: inherit;
 }
 body{
-  margin: 0px 15%;
+  width: 1000px;
+  margin: auto;
   font-family: myRegular;
-  background-color: black;
+  background-image: url(../img-movie/background.jpg);
+  background-size: 20%;
   border: 2px solid red;
-    padding: 10px;
-    border-radius: 25px;
-    box-shadow: 0px 0px 23px 0px rgba(255, 0, 0, 1);}
+  padding: 10px;
+  border-radius: 25px;
+  box-shadow: 0px 0px 23px 0px rgba(255, 0, 0, 1);
+  }
 h2, h3, h4{
   font-family: myTitle;
 }
@@ -58,25 +61,26 @@ th {
   background-color: #b80600;
   color: rgb(226, 226, 226);
 }
-
-#container{background: white;}
-
 header{
   display: flex;
   align-items: center;
   border-top: 2px solid black;
+
 }
-header img{
-  max-width: 100%;
-  height: auto;
+#banner{
+  flex: 1.5;
+  background-image: url(../img-movie/banner.jpg);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  height: 48vh;
+  z-index: 99;
 }
 header h1{
+  flex: 1;
   font-family: Army;
-  font-size: 3.5vw;
-
+  font-size: 45px;
   margin: 0;
-
-  
+ 
 }
 header h1 i{
   display: block;
@@ -90,7 +94,7 @@ header h1 i:nth-child(1){
   padding-top: 8px;
 }
 header h1 i:nth-child(2){
-  font-size: 2.5vw;
+  font-size: 20px;
 }
 header h1 i:nth-child(3){
   color: rgb(191, 0, 0);
@@ -100,12 +104,14 @@ header h1 i:nth-child(3){
 }
 header h1 i:nth-child(4){
   padding-top: 10%;
-  font-size: 1.5vw;  
+  font-size: 20px;  
 }
-
 #container{
-  flex: 3.5;
-  padding: 0px 20px;
+  background: white;
+}
+#container2{
+  flex: 3;
+  padding: 0px 10px;
 }
 section{
   padding: 10px 0px;
@@ -127,8 +133,8 @@ aside img{
   height: auto;
 }
 
-aside :not(img){
-  padding: 0 10px; 
+aside p, aside a, aside h3{
+  padding: 0 10px;
 }
 
 #columns{
@@ -205,8 +211,11 @@ nav ul li a:hover, nav ul li a:active {
   float:right;
   margin-right: 5%
 }
-
+footer{background-color: #855e40}
 footer a{
   font-size: 2em;
-
+}
+iframe{
+  width: 100vw;
+  height: 90vh;
 }

@@ -12,6 +12,7 @@ Other Pictures and Gifs: tumblr, www.cgmeetup.net, www.impawards.com, www.edgeof
 ****************************/
 
 @import url(normalize.css);
+
 @font-face{
   font-family: myRegular;
   src: url(../fonts/SongMyung-Regular.ttf)
@@ -226,6 +227,8 @@ footer a{
   font-size: 2em;
 }
 iframe{
-  width: 100vw;
-  height: 90vh;
+  display:block;
+  width: 100%;
+  height:100vh;
+  border: 0;
 }

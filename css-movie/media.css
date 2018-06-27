@@ -28,17 +28,16 @@
     width: 100%;
     padding-bottom: 35%}
   #banner{filter: brightness(1.5)}
-  iframe{width: 90vw}
 } 
 @media screen and (max-width:540px){
-  iframe{width: 85vw}
+  header h1 i{line-height: 100%}
 }
 
 @media screen and (max-width:525px){
   #banner{height: 35vh}
-  section{display: grid}
-  #container2{order:-1}
-
+  section{flex-flow: column}
+  #container2{order:-1;}
+  
   /*  Use of a css3 feature not listed in the homework (column-count)  */
   aside {
     max-width: 100%;
@@ -46,21 +45,20 @@
 }
 @media screen and (max-width:380px){
   aside{column-count: 1;
-    display: grid}
+    display: flex;  flex-flow: column;  }
   aside span{padding-bottom: 20px;}
   picture img{ display:block; margin: 0 auto; }
   aside :not(picture){order: -1}
 }
 @media screen and (max-width:287px){
   body{border: 0; padding: 0}
-  iframe{width: 95vw}
+  
+  
 }
 
 @media print{
 
-  body{ border: none;
-    
-  }
+  body{ border: none;}
   #banner, #map_container1, #map_container2, nav, picture, footer{display: none}
   section {page-break-after: always;}
   h1 {page-break-after: avoid;}

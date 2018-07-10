@@ -1,0 +1,26 @@
+
+
+h1, li{ 
+  margin-top: 20px
+}
+
+textarea {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.top{
+  background-color: #10327A;
+  color: white; 
+}
+
+.container{
+  border: 12px solid lightgray;
+  border-radius: 2%;
+  background-color: rgb(242, 245, 247)
+}
+
+.text-right img{
+  border-left: solid 1px lightgrey;
+  border-right: solid 1px lightgrey;
+}

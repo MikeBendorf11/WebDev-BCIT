@@ -55,10 +55,22 @@ nav {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
     color: #5E5C5C;
+    transition: color 0.3s;
+}
+
+#nav-selections a:hover {
+    color: #9C9C9C;
+    transition: color 0.3s;
 }
 
 #nav-selections input {
     margin-left: 15px;
+    width: 15vw;
+}
+
+#nav-selections input::placeholder {
+    font-family: Helvetica, sans-serif;
+    color: #9C9C9C;
 }
 
 #nav-selections button {
@@ -70,9 +82,11 @@ nav {
 
 
 #lecture-menu {
-    width: 22vw;
+    width: 20vw;
+    min-width: 200px;
     height: 92.1875vh;
     background-color: white;
+
 }
 
 #lecture-menu-flex {
@@ -80,23 +94,54 @@ nav {
 }
 
 #lecture-menu-flex li {
-    margin-top: 10px;
-    margin-bottom: 10px;
+    margin: 12px 0;
 }
 
-#lecture-menu-title {
+#lecture-menu h2 {
     font-family: Helvetica, sans-serif;
     font-size: 24px;
     color: #9C9C9C;
     text-align: center;
+    padding-top: 20px;
+}
+
+#lecture-menu hr {
+    text-align: center;
+    color: #F7F7F7;
+    width: 70%;
 }
 
 #lecture-menu-title ul {
     margin: 10px;
 }
 
-#lecture-menu-flex a {
-    text-align: left;
+#lecture-menu-flex a{
+    padding-left: 15px;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+#lecture-menu-flex .complete {
+    padding-left: 15px;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: #9C9C9C;
+    transition: color 0.3s;
+}
+
+#lecture-menu-flex .complete:hover {
+    color: #bababa;
+    transition: color 0.3s;
+}
+
+#lecture-menu-flex .incomplete {
+    color: #459CFF;
+    transition: color 0.3s;
+}
+
+#lecture-menu-flex .incomplete:hover {
+    color: #67bfff;
+    transition: color 0.3s;
 }
 
 
@@ -104,8 +149,7 @@ nav {
 
 
 
-
-
+/*change at 750
 
 
 

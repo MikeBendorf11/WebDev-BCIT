@@ -1,15 +1,66 @@
+<!--Creators (in alphabetical order): Daniel Joo, Ivan Chen, Mijael Bendorf-->
+
 <!DOCTYPE html>
+
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
-</head>
-<body>
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>COMP 1950</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+          crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="js/bootstrap.js"></script>
+</head>
+
+<body>
+
+<nav class="flex-wrap" id="big-nav">
+
+    <div class="flex-wrap" id="nav-logo-title">
+        <a href="www.bcit.ca" target="_blank"><img src="images/bcitLogo.png" alt="BCIT Logo"></a>
+        <a href="#"><h1>COMP 1950</h1></a>
+    </div>
+
+    <ul class="flex-wrap" id="nav-selections">
+        <li><a href="#">About</a></li>
+        <li><a href="#">Resources</a></li>
+        <li><a href="#">myBCIT</a></li>
+        <li><a href="#">D2L</a></li>
+        <li>
+            <div class="input-group">
+                <input type="text" class="form-control" placeholder="Search" name="srch-term" id="srch-term">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        <li>
+    </ul>
+
+</nav>
+
+<section id="lecture-menu">
+    <ul class="flex-wrap">
+        <li id="lecture-menu-title">Lectures</li>
+        <li><a href="lectures.html" class="complete">01. Tools & Standards</a></li>
+        <li><a href="#" class="complete">02. HTML5</a></li>
+        <li><a href="#" class="complete">03. Advanced CSS</a></li>
+        <li><a href="#" class="complete">04. CSS Layouts</a></li>
+        <li><a href="#" class="complete">05. Responsive Design</a></li>
+        <li><a href="#" class="complete">06. CSS3</a></li>
+        <li><a href="#" class="incomplete">07. Javascript Frameworks</a></li>
+        <li><a href="#" class="incomplete">08. Server Architecture </a></li>
+        <li><a href="#" class="incomplete">09. Templates, Tools</a></li>
+        <li><a href="#" class="incomplete">10. Methodology</a></li>
+    </ul>
+</section>
 
 </body>
+
 </html>

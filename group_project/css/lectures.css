@@ -1,0 +1,11 @@
+header .col{
+    width: 100%;
+    height: 80px;
+    border: 1px solid #000;
+    text-align: center;
+    font-size: 18px;
+    line-height: 80px;
+    position: fixed;
+    background-color: lightskyblue;
+    background: #000;
+}

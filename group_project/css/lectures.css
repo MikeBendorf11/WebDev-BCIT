@@ -7,5 +7,5 @@ header .col{
     line-height: 80px;
     position: fixed;
     background-color: lightskyblue;
-   
+    background: #000;
 }

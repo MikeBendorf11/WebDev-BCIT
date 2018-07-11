@@ -69,10 +69,11 @@ nav {
 
 .flex-wrap {
     display: flex;
+    justify-content: space-between;
 }
 
 #nav-logo-title {
-    justify-self: flex-start;
+    justify-self: start;
     justify-content: flex-start;
     align-items: center;
 }
@@ -92,8 +93,23 @@ nav {
 }
 
 #nav-selections {
-    float: right;
     justify-self: flex-end;
     justify-content: center;
     align-items: center;
+}
+
+#nav-selections a {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    color: #5E5C5C;
+}
+
+#nav-selections input {
+    margin-left: 15px;
+}
+
+#nav-selections button {
+    margin-right: 20px;
 }

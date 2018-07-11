@@ -23,19 +23,19 @@ nav {
     justify-content: space-between;
 }
 
-#nav-logo-title {
+.nav-logo-title {
     justify-self: start;
     justify-content: flex-start;
     align-items: center;
 }
 
-#nav-logo-title img {
+.nav-logo-title img {
     width: 50px;
     height: 50px;
     margin: 5px;
 }
 
-#nav-logo-title h1 {
+.nav-logo-title h1 {
     align-self: center;
     font-family: Helvetica, sans-serif;
     font-size: 24px;
@@ -155,11 +155,13 @@ nav {
 }
 
 
+/*MAIN WINDOW*/
 
 
 
 
-/*change at 750
+
+/*change media query at 750
 
 
 

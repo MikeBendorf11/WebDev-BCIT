@@ -73,6 +73,16 @@ nav {
     color: #9C9C9C;
 }
 
+#nav-selections input, #nav-selections select, #nav-selections textarea{
+    font-family: Helvetica, sans-serif;
+    color: #5E5C5C;
+}
+
+#nav-selections textarea:focus, #nav-selections input:focus {
+    font-family: Helvetica, sans-serif;
+    color: #5E5C5C;
+}
+
 #nav-selections button {
     margin-right: 20px;
 }

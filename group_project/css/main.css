@@ -59,7 +59,9 @@ a:hover, li {
     text-decoration: none;
 }
 
+
 /*NAVIGATION STYLING*/
+
 
 nav {
     background-color: #F7F7F7;
@@ -113,3 +115,52 @@ nav {
 #nav-selections button {
     margin-right: 20px;
 }
+
+
+/*LECTURE SIDE MENU STYING*/
+
+
+#lecture-menu {
+    width: 22vw;
+    height: 92.1875vh;
+    background-color: white;
+}
+
+#lecture-menu-flex {
+    flex-direction: column;
+}
+
+#lecture-menu-flex li {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+#lecture-menu-title {
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    color: #9C9C9C;
+    text-align: center;
+}
+
+#lecture-menu-title ul {
+    margin: 10px;
+}
+
+#lecture-menu-flex a {
+    text-align: left;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

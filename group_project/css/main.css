@@ -144,6 +144,14 @@ nav {
     margin-right: 20px;
 }
 
+#nav-selections i {
+    color: #5E5C5C;
+}
+
+#medium-nav {
+    display: none;
+}
+
 
 /*LECTURE SIDE MENU STYING*/
 
@@ -153,7 +161,6 @@ nav {
     min-width: 200px;
     height: 92.1875vh;
     background-color: white;
-
 }
 
 #lecture-menu-flex {
@@ -217,9 +224,15 @@ nav {
 
 @media screen and (min-width:450px) and (max-width:750px) {
 
+    #medium-nav {
+        display: block;
+    }
 
+    #dropdown-nav-menu {
+        display: inline;
+    }
 
-    #big-nav {
+    #big-nav, #lecture-menu {
         display: none;
     }
 

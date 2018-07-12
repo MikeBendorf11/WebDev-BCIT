@@ -9,8 +9,9 @@ textarea {
   width: 100%;
 }
 
-.top{
-  background-color: #10327A;
+.banner{
+  background-image:url(../images/oceanDivide.jpg);
+  background-position: 45% 45%;
   color: white; 
 }
 
@@ -20,7 +21,62 @@ textarea {
   background-color: rgb(242, 245, 247)
 }
 
-.text-right img{
-  border-left: solid 1px lightgrey;
-  border-right: solid 1px lightgrey;
+.col-10 img{
+  float: right;
+  margin-top: 10px;
+  border-left: solid 2px grey;
+  border-bottom: solid 2px black;
+  border-radius: 40%
+
+}
+
+.quiz .left{  
+  background-image: url(/images/blue-bg.jpg);
+  background-size: 125% ;
+  background-repeat: no-repeat
+}
+
+@media (max-width: 768px){
+  .quiz .col-2{
+    flex: 0 0 0%;
+    max-width: 0%;
+  }
+  .quiz .col-8{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+  .container{
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  .banner .col-2{
+    padding: 0
+  }
+  .col-10{
+    padding-right: 0
+  }
+  .col-10 img{
+    margin-left: 10px;
+    
+  }
+
+  
+}
+@media (max-width: 600px){
+  .banner img{
+    max-width: 14vw;    
+    margin-top: 0px;
+    border-top-right-radius: 4px;
+  }
+  .banner .col-2{
+    align-self: flex-start
+  }
+}
+@media (max-width: 400px){
+  .banner .col-10{
+    padding-left: 5px
+  }
 }

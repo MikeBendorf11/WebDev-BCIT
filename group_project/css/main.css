@@ -225,7 +225,7 @@ nav {
 @media screen and (min-width:450px) and (max-width:750px) {
 
     #medium-nav {
-        display: block;
+        display: flex;
     }
 
     #dropdown-nav-menu {

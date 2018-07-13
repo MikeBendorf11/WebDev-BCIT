@@ -1,28 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <!-- Bootstrap -->
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet">
-
+    <link href="css/bootstrap.css" rel="stylesheet">
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+        <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+        <!-- Include all compiled plugins (below), or include individual files as needed -->
+        <script src="js/bootstrap.js"></script>
+      
 
     <title>COMP1950 | Lecture 01: Tools and Standards | BCIT</title>
     <meta name="description" content="British Columbia Institute of Technology is one of BC's largest post-secondary institutions. In Vancouver, BCIT offers courses and programs in technology, trades, engineering, business, and health.">
     <meta name="keywords" content="british columbia institute of technology, vancouver, canada, post secondary education, technology education, trades education, business education, health education">
     <link rel="icon" href="images/web.png">
+    <link rel="stylesheet" href="iconfont/iconfont.css">
     <link rel="stylesheet" href="css/lectures.css">
-    <link rel="stylesheet" type="text/css" href="iconfont/iconfont.css">
+    <script>
+        $(function () {
+            $(".contblock>ul>li").prepend("<span></span>");
+            $(".contblock>ul>li>span").addClass("iconfont icon-jingdiananli_kongwujiaoxing_shoucang");
+            $(".contblock>ul>li>ul>li").prepend("<span></span>");
+            $(".contblock>ul>li>ul>li>span").addClass("iconfont icon-jiantouyou");
+    
+        })
+    </script>
 
 </head>
 
@@ -52,6 +61,7 @@
                             <a href="#standards">Standards based development</a>
                         </li>
                         <li>
+                            
                             <a href="#todo">To Do</a>
                         </li>
                     </ul>
@@ -126,7 +136,8 @@
                                 <li>a case sensitive password you will remember - ???</li>
                             </ul>
                         </li>
-                        <li>Take the name portion of your
+                        <li>
+                            Take the name portion of your
                             <code>my.bcit.ca</code> email address and use it at the end of the URL described below (eg: if your email address is
                             '
                             <em>yourname123@my.bcit.ca</em>', your email name is '
@@ -134,6 +145,7 @@
                             <em>http://bcitcomp.ca/students/yourname123</em>'
                             <br/>For example:
                             <code>http://bcitcomp.ca/students/your_bcit_email_name</code>
+                            
                         </li>
                     </ul>
                 </div>
@@ -673,15 +685,7 @@
             </div>
         
     </div>
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="bootstrap/js/bootstrap.min.js"></script>
-    <script>
-        $(function () {
-            $("li").addClass("iconfont icon-biaozhu")
-        })
-    </script>
+
 </body>
 
 </html>

@@ -1,132 +1,290 @@
+<!--Creators (in alphabetical order): Daniel Joo, Ivan Chen, Mijael Bendorf-->
+
 <!DOCTYPE html>
+
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Document</title>
-  <link href="css/bootstrap.css" rel="stylesheet">
-  <link rel="stylesheet" href="css/quiz.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="British Columbia Institute of Technology is one of BC's largest post-secondary institutions. In Vancouver, BCIT offers courses and programs in technology, trades, engineering, business, and health.">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>BCIT - COMP 1950 - Lecture1 Quiz</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/home.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/quiz.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script>
+      function startTimer(duration, display) {
+        var timer = duration, minutes, seconds;
+        setInterval(function () {
+          minutes = parseInt(timer / 60, 10)
+          seconds = parseInt(timer % 60, 10);
+
+          minutes = minutes < 10 ? "0" + minutes : minutes;
+          seconds = seconds < 10 ? "0" + seconds : seconds;
+
+          display.innerHTML = "<b>\u231A</b> " + minutes + ":" + seconds;
+
+          if (--timer < 0) {
+            timer = duration;
+          }
+        }, 1000);
+      }
+
+      window.onload = function () {
+        var minutesLeft = 60 * 20,
+          display = document.querySelector('#time');
+        startTimer(minutesLeft, display);
+        quizbtn.addEventListener('click', ()=>{
+          alert('You passed with A++')
+          minutesLeft = 60*20
+        })
+      };
+    </script>
 </head>
 
 <body>
-  <div class="container">
-    <div class="banner row align-items-center rounded-top">
-      <div class="col-2">
-        <img src="images/logo.png" alt="bcit logo">
-      </div>
-      <div class="col-10">
-        <img class="" src="images/clock.png" alt="time left" data-toggle="tooltip" title="20:00 mins left">
-        <span class=""><br>
-          <strong>COMP1950 - Web Development and Design</strong>
-        </span>
-        <br>
-        <span>Monday & Wednesday </span>
-        <br>
-        <span>Lecture 01: Tools and Standards</span>
-        <br><br>
-      </div>
+    <!-- NAVIGATION BAR -->
 
+    <nav class="flex-wrap" id="big-nav">
+        <div class="flex-wrap nav-logo-title">
+            <a href="http://www.bcit.ca" target="_blank">
+                <img src="images/bcitLogo.png" alt="BCIT Logo">
+            </a>
+            <a class="aComp" href="home.html">
+                <h1>COMP 1950</h1>
+            </a>
+        </div>
+        <ul class="flex-wrap" id="nav-selections">
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Resources</a>
+            </li>
+            <li>
+                <a href="#">myBCIT</a>
+            </li>
+            <li>
+                <a href="#">D2L</a>
+            </li>
+            <li>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search.." name="srch-term" id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            <li>
+        </ul>
+    </nav>
 
+    <!-- MEDIUM BAR -->
+
+    <nav class="flex-wrap" id="medium-nav">
+        <div class="flex-wrap nav-logo-title">
+            <a href="http://www.bcit.ca" target="_blank">
+                <img src="images/bcitLogo.png" alt="BCIT Logo">
+            </a>
+            <a class="aComp" href="home.html">
+                <h1>COMP
+                    <br id="brComp"> 1950</h1>
+            </a>
+        </div>
+
+        <div class="dropdown show align-self-center" id="dropdown-nav-menu">
+            <button class="btn-outline-primary rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Lectures
+            </button>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="lectures.html">01: Tools, Standards</a>
+                <a class="dropdown-item" href="#">02: HTML 5</a>
+                <a class="dropdown-item" href="#">03: Advanced CSS</a>
+                <a class="dropdown-item" href="#">04: CSS Layouts</a>
+                <a class="dropdown-item" href="#">05: Responsive Design</a>
+                <a class="dropdown-item" href="#">06: CSS3</a>
+                <a class="dropdown-item" href="#">07: Javascript Frameworks</a>
+                <a class="dropdown-item" href="#">08: Server Architecture</a>
+                <a class="dropdown-item" href="#">09: Templates Tools</a>
+                <a class="dropdown-item" href="#">10: Methodology</a>
+            </div>
+        </div>
+        <div class="dropdown show align-self-center" id="dropdown-nav-menu">
+            <button class="btn-outline-primary rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Other Links
+                </buttton>
+        
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">About</a>
+                    <a class="dropdown-item" href="#">Ressources</a>
+                    <a class="dropdown-item" href="#">BCIT</a>
+                    <a class="dropdown-item" href="#">myBCIT</a>
+                    <a class="dropdown-item" href="#">D2L</a>
+                </div>
+        </div>
+        <div id="input-responsive">
+            <div class="input-group ">
+                <input type="text" class="form-control" placeholder="Search.." name="srch-term" id="srch-term">
+                <div class="input-group-btn">
+                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+    <div class="content">
+
+        
+        <!-- SIDE MENU -->
+        <section id="lecture-menu">
+            <h2>Lectures</h2>
+            <hr>
+            <ul>
+                <li>
+                    <a href="lectures.html" class="complete">
+                        <span>01.</span> Tools & Standards</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>02.</span> HTML5</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>03.</span> Advanced CSS</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>04. </span>CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>05. </span>Responsive Design</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>06. </span>CSS3</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>07. </span>Javascript Frameworks</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>08. </span>Server Architecture </a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>09.</span> Templates, Tools</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>10.</span> Methodology</a>
+                </li>
+            </ul>
+        </section>
+        <div class="inner-content">
+            <!-- YOUR CONTENT HERE -->
+            <h3 id="time"><b>&#8986;</b>20:00</h3>
+            <h1>Quiz 1</h1>
+            <ol>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor vel, illum accusantium dolore cum mollitia
+                  pariatur dignissimos quaerat blanditiis eius, numquam quisquam harum? Illo omnis veritatis quibusdam. Impedit,
+                  labore?
+                </p>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, exercitationem?</label>
+                </div>
+                <div class="custom-control custom-radio">
+                  <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis quod fugit optio reiciendis autem sint dolor
+                    similique debitis ad.</label>
+                </div>
+              </li>
+              <li>
+                <p>
+                  Lorem
+                  <mark>__________</mark> sit amet consectetur adipisicing elit. Aspernatur, unde?
+                </p>
+    
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="customCheck1">
+                  <label class="custom-control-label" for="customCheck1">One</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="customCheck2">
+                  <label class="custom-control-label" for="customCheck2">Two</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="customCheck3">
+                  <label class="custom-control-label" for="customCheck3">Three</label>
+                </div>
+                <div class="custom-control custom-checkbox custom-control-inline">
+                  <input type="checkbox" class="custom-control-input" id="customCheck4">
+                  <label class="custom-control-label" for="customCheck4">Four</label>
+                </div>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quas ratione atque distinctio? Quidem doloribus
+                  nostrum obcaecati repellendus laudantium officiis repellat veritatis quos sed doloremque ab deleniti velit
+                  porro eius atque soluta nesciunt ea accusantium nobis harum, hic aspernatur libero.</p>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio3" name="customRadioB" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio3">True</label>
+                </div>
+                <div class="custom-control custom-radio custom-control-inline">
+                  <input type="radio" id="customRadio4" name="customRadioB" class="custom-control-input">
+                  <label class="custom-control-label" for="customRadio4"> False</label>
+                </div>
+              </li>
+              <li>
+                <p>Which of these statments are true?</p>
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="customCheck44">
+                  <label class="custom-control-label" for="customCheck44">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, dolore.</label>
+                </div>
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="customCheck5">
+                  <label class="custom-control-label" for="customCheck5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio voluptas dicta officiis laboriosam eveniet?</label>
+                </div>
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="customCheck6">
+                  <label class="custom-control-label" for="customCheck6">Lorem ipsum dolor sit amet.</label>
+                </div>
+                <div class="custom-control custom-checkbox ">
+                  <input type="checkbox" class="custom-control-input" id="customCheck7">
+                  <label class="custom-control-label" for="customCheck7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iusto iure ipsam quibusdam aliquid nemo excepturi
+                    laudantium alias voluptate consequatur.</label>
+                </div>
+              </li>
+              <li>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, optio. Write some code:
+                </p>
+                <textarea id="area1" rows="4">
+    
+                </textarea>
+              </li>
+            </ol>
+            <button id="quizbtn" class="btn-outline-primary rounded">Submit your answers</button>
+            <br>
+            <br>
+        </div>
     </div>
-    <div class="row quiz">
-    <div class="row quiz">
-      <div class="col-2 left"></div>
-      <div class="col-8">
-        <h1>Quiz 1</h1>
-        <ol>
-          <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque dolor vel, illum accusantium dolore cum mollitia
-              pariatur dignissimos quaerat blanditiis eius, numquam quisquam harum? Illo omnis veritatis quibusdam. Impedit,
-              labore?
-            </p>
-            <div class="custom-control custom-radio">
-              <input type="radio" id="customRadio1" name="customRadio" class="custom-control-input">
-              <label class="custom-control-label" for="customRadio1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos, exercitationem?</label>
-            </div>
-            <div class="custom-control custom-radio">
-              <input type="radio" id="customRadio2" name="customRadio" class="custom-control-input">
-              <label class="custom-control-label" for="customRadio2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Non omnis quod fugit optio reiciendis autem sint dolor
-                similique debitis ad.</label>
-            </div>
-          </li>
-          <li>
-            <p>
-              Lorem
-              <mark>__________</mark> sit amet consectetur adipisicing elit. Aspernatur, unde?
-            </p>
-
-            <div class="custom-control custom-checkbox custom-control-inline">
-              <input type="checkbox" class="custom-control-input" id="customCheck1">
-              <label class="custom-control-label" for="customCheck1">One</label>
-            </div>
-            <div class="custom-control custom-checkbox custom-control-inline">
-              <input type="checkbox" class="custom-control-input" id="customCheck2">
-              <label class="custom-control-label" for="customCheck2">Two</label>
-            </div>
-            <div class="custom-control custom-checkbox custom-control-inline">
-              <input type="checkbox" class="custom-control-input" id="customCheck3">
-              <label class="custom-control-label" for="customCheck3">Three</label>
-            </div>
-            <div class="custom-control custom-checkbox custom-control-inline">
-              <input type="checkbox" class="custom-control-input" id="customCheck4">
-              <label class="custom-control-label" for="customCheck4">Four</label>
-            </div>
-          </li>
-          <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit quas ratione atque distinctio? Quidem doloribus
-              nostrum obcaecati repellendus laudantium officiis repellat veritatis quos sed doloremque ab deleniti velit
-              porro eius atque soluta nesciunt ea accusantium nobis harum, hic aspernatur libero.</p>
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" id="customRadio3" name="customRadioB" class="custom-control-input">
-              <label class="custom-control-label" for="customRadio3">True</label>
-            </div>
-            <div class="custom-control custom-radio custom-control-inline">
-              <input type="radio" id="customRadio4" name="customRadioB" class="custom-control-input">
-              <label class="custom-control-label" for="customRadio4"> False</label>
-            </div>
-          </li>
-          <li>
-            <p>Which of these statments are true?</p>
-            <div class="custom-control custom-checkbox ">
-              <input type="checkbox" class="custom-control-input" id="customCheck44">
-              <label class="custom-control-label" for="customCheck44">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, dolore.</label>
-            </div>
-            <div class="custom-control custom-checkbox ">
-              <input type="checkbox" class="custom-control-input" id="customCheck5">
-              <label class="custom-control-label" for="customCheck5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae odio voluptas dicta officiis laboriosam eveniet?</label>
-            </div>
-            <div class="custom-control custom-checkbox ">
-              <input type="checkbox" class="custom-control-input" id="customCheck6">
-              <label class="custom-control-label" for="customCheck6">Lorem ipsum dolor sit amet.</label>
-            </div>
-            <div class="custom-control custom-checkbox ">
-              <input type="checkbox" class="custom-control-input" id="customCheck7">
-              <label class="custom-control-label" for="customCheck7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, iusto iure ipsam quibusdam aliquid nemo excepturi
-                laudantium alias voluptate consequatur.</label>
-            </div>
-          </li>
-          <li>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, optio. Write some code:
-            </p>
-            <textarea id="area1" rows="4">
-
-            </textarea>
-          </li>
-        </ol>
-        <button class="btn-outline-primary rounded">Submit your answers</button>
-        <br>
-        <br>
-      </div>
-
-      <div class="col-2 right"></div>
-    </div>
-  </div>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
-  <script src="js/bootstrap.js"></script>
-
+    
 </body>
 
 </html>

@@ -16,20 +16,19 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+   
 </head>
 
 <body>
-
-<!---------------------------------------------------NAVIGATION BAR--------------------------------------------------->
+<!-- NAVIGATION BAR -->
 
 <nav class="flex-wrap" id="big-nav">
-
     <div class="flex-wrap nav-logo-title">
         <a href="http://www.bcit.ca" target="_blank"><img src="images/bcitLogo.png" alt="BCIT Logo"></a>
-        <a href="#"><h1>COMP 1950</h1></a>
+        <a class="aComp"href="#"><h1>COMP 1950</h1></a>
     </div>
-
     <ul class="flex-wrap" id="nav-selections">
         <li><a href="#">About</a></li>
         <li><a href="#">Resources</a></li>
@@ -44,39 +43,65 @@
             </div>
         <li>
     </ul>
-
 </nav>
 
-<nav class="flex-wrap" id="small-nav">
-
+<nav class="flex-wrap" id="medium-nav">
     <div class="flex-wrap nav-logo-title">
         <a href="http://www.bcit.ca" target="_blank"><img src="images/bcitLogo.png" alt="BCIT Logo"></a>
-        <a href="#"><h1>COMP 1950</h1></a>
+        <a class="aComp" href="#"><h1>COMP<br id="brComp"> 1950</h1></a>
     </div>
 
+    <div class="dropdown show align-self-center" id="dropdown-nav-menu">
+        <button class="btn-outline-primary rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lectures
+        </button>
+    
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">01: Tools, Standards</a>
+            <a class="dropdown-item" href="#">02: HTML 5</a>
+            <a class="dropdown-item" href="#">03: Advanced CSS</a>
+            <a class="dropdown-item" href="#">04: CSS Layouts</a>
+            <a class="dropdown-item" href="#">05: Responsive Design</a>
+            <a class="dropdown-item" href="#">06: CSS3</a>
+            <a class="dropdown-item" href="#">07: Javascript Frameworks</a>
+            <a class="dropdown-item" href="#">08: Server Architecture</a>
+            <a class="dropdown-item" href="#">09: Templates Tools</a>
+            <a class="dropdown-item" href="#">10: Methodology</a>
+        </div>
+    </div>
+    <div class="dropdown show align-self-center" id="dropdown-nav-menu">
+        <button class="btn-outline-primary rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true"
+            aria-expanded="false">
+            Other Links
+    </buttton>
+    
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">About</a>
+            <a class="dropdown-item" href="#">Ressources</a>
+            <a class="dropdown-item" href="#">BCIT</a>
+            <a class="dropdown-item" href="#">myBCIT</a>
+            <a class="dropdown-item" href="#">D2L</a>
+        </div>
+    
+        </nav>
 
-
-</nav>
-
-<!-----------------------------------------------------SIDE MENU----------------------------------------------------->
+<!-- SIDE MENU -->
 
 <section id="lecture-menu">
     <h2>Lectures</h2>
     <hr>
-    <ul class="flex-wrap" id="lecture-menu-flex">
-        <li><a href="lectures.html" class="complete">01. Tools & Standards</a></li>
-        <li><a href="#" class="complete">02. HTML5</a></li>
-        <li><a href="#" class="complete">03. Advanced CSS</a></li>
-        <li><a href="#" class="complete">04. CSS Layouts</a></li>
-        <li><a href="#" class="complete">05. Responsive Design</a></li>
-        <li><a href="#" class="complete">06. CSS3</a></li>
-        <li><a href="#" class="incomplete">07. Javascript Frameworks</a></li>
-        <li><a href="#" class="incomplete">08. Server Architecture </a></li>
-        <li><a href="#" class="incomplete">09. Templates, Tools</a></li>
-        <li><a href="#" class="incomplete">10. Methodology</a></li>
+    <ul  id="lecture-menu">
+        <li><a href="lectures.html" class="complete"><span>01.</span> Tools & Standards</a></li>
+        <li><a href="#" class="complete"><span>02.</span> HTML5</a></li>      
+        <li><a href="#" class="complete"><span>03.</span> Advanced CSS</a></li>
+        <li><a href="#" class="complete"><span>04. </span>CSS Layouts</a></li>
+        <li><a href="#" class="complete"><span>05. </span>Responsive Design</a></li>
+        <li><a href="#" class="complete"><span>06. </span>CSS3</a></li>
+        <li><a href="#" class="complete"><span>07. </span>Javascript Frameworks</a></li>
+        <li><a href="#" class="complete"><span>08. </span>Server Architecture </a></li>
+        <li><a href="#" class="complete"><span>09.</span> Templates, Tools</a></li>
+        <li><a href="#" class="complete"><span>10.</span> Methodology</a></li>
     </ul>
 </section>
-
 </body>
-
 </html>

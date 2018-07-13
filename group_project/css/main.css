@@ -222,8 +222,11 @@ nav {
 /*MAIN WINDOW*/
 
 
-@media screen and (min-width:450px) and (max-width:750px) {
+@media screen and (max-width:781px) {
 
+    .flex-wrap {
+        justify-content: space-around;
+    }
     #medium-nav {
         display: flex;
     }
@@ -235,12 +238,11 @@ nav {
     #big-nav, #lecture-menu {
         display: none;
     }
+    
 
 }
 
-@media screen and (max-width: 449px) {
 
-}
 
 
 

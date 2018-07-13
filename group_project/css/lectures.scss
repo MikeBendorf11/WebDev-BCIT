@@ -1,19 +1,27 @@
+// general style
 body{
     margin: 0;
     padding: 0;
-    font-family: Helvetica;
+    font-family: Helvetica, sans-serif;
 }
+
 ul{
     padding-left: 20px;
+    li{
+        list-style: none;
+        
+    }
 }
 
 a{
     color: #007BFF;
 }
 
-li{
-    list-style: none;
+img{
+    margin: 5px;
 }
+
+// header
 header{
     height: 60px;
     background:lightskyblue;
@@ -26,6 +34,7 @@ header{
     padding: 16px 15px 16px 30px;
     .contblock{
         background: #f7f7f9;
+        padding: 15px;
     }
 
     h2:first-child{
@@ -33,5 +42,6 @@ header{
         font-weight: 300;
         margin: 10px;
        }
-    
 }
+
+

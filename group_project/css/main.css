@@ -234,7 +234,7 @@ nav {
     }
 
     #dropdown-nav-menu {
-        justify-self: flex-end;
+        justify-self: end;
         display: inline;
     }
 

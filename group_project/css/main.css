@@ -18,35 +18,41 @@ article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-	display: block;
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
+
 ol, ul {
-	list-style: none;
+    list-style: none;
 }
+
 blockquote, q {
-	quotes: none;
+    quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-	content: '';
-	content: none;
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 /*********************************************************CODE*********************************************************/
@@ -62,14 +68,13 @@ a:hover, li {
 }
 
 ul {
-     list-style-type: none;
+    list-style-type: none;
 }
-
 
 /*NAVIGATION STYLING*/
 
-
 nav {
+    position: fixed;
     background-color: #F7F7F7;
     height: 60px;
     width: 100%;
@@ -86,18 +91,18 @@ nav {
     align-items: center;
 }
 
-.nav-logo-title img {
-    width: 50px;
-    height: 50px;
-    margin: 5px;
-}
-
 .nav-logo-title h1 {
     align-self: center;
     font-family: Helvetica, sans-serif;
     font-size: 24px;
     color: #9C9C9C;
     margin-left: 15px;
+}
+
+.nav-logo-title img {
+    width: 50px;
+    height: 50px;
+    margin: 5px;
 }
 
 #nav-selections {
@@ -130,7 +135,7 @@ nav {
     color: #9C9C9C;
 }
 
-#nav-selections input, #nav-selections select, #nav-selections textarea{
+#nav-selections input, #nav-selections select, #nav-selections textarea {
     font-family: Helvetica, sans-serif;
     color: #5E5C5C;
 }
@@ -152,15 +157,24 @@ nav {
     display: none;
 }
 
+/*GRID LAYOUT*/
+
+#grid-container {
+    display: grid;
+    grid-template-areas: "menu content";
+    grid-template-columns: 20% 80%;
+}
 
 /*LECTURE SIDE MENU STYING*/
 
-
 #lecture-menu {
-    width: 20vw;
-    min-width: 200px;
+    display: block;
+    grid-area: menu;
+    min-width: 250px;
     height: 92.1875vh;
     background-color: white;
+    position: fixed;
+    top: 60px;
 }
 
 #lecture-menu-flex {
@@ -189,7 +203,7 @@ nav {
     margin: 10px;
 }
 
-#lecture-menu-flex a{
+#lecture-menu-flex a {
     padding-left: 15px;
     font-family: Helvetica, sans-serif;
     font-size: 18px;
@@ -218,13 +232,52 @@ nav {
     transition: color 0.3s;
 }
 
-
 /*MAIN WINDOW*/
 
+#main-interface {
+    grid-area: content;
+    display: block;
+    position: relative;
+    top: 60px;
+    float: right;
+    margin: 7px;
+    color: #138496;
+    height: 92.1875vh;
+}
 
-@media screen and (max-width:781px) {
+@media screen and (max-width: 781px) and (min-width: 431px) {
+
+    .nav-logo-title h1 {
+        align-self: center;
+        font-family: Helvetica, sans-serif;
+        font-size: 24px;
+        color: #9C9C9C;
+        margin-left: 15px;
+    }
+
+    .dropdown-menu a {
+        margin: 10px 0;
+        font-family: Helvetica, sans-serif;
+        font-size: 18px;
+        color: #5E5C5C;
+        transition: color 0.3s;
+    }
+
+    .dropdown-menu a:hover {
+        color: #9C9C9C;
+        transition: color 0.3s;
+    }
+
+    .btn-outline-primary, .dropdown-toggle {
+        font-family: Helvetica, sans-serif;
+    }
+
+    #dropdown-nav-lecture a {
+        font-family: Helvetica, sans-serif;
+    }
 
     #medium-nav {
+        position: fixed;
         display: inline-flex;
     }
 
@@ -236,12 +289,23 @@ nav {
     #dropdown-nav-menu {
         justify-self: end;
         display: inline;
+        margin-right: 15px;
     }
 
     #big-nav, #lecture-menu {
         display: none;
     }
 
+}
+
+
+@media screen and (max-width: 431px) {
+
+
+
+    #big-nav, #lecture-menu {
+        display: none;
+    }
 
 }
 

@@ -222,13 +222,19 @@ nav {
 /*MAIN WINDOW*/
 
 
-@media screen and (min-width:450px) and (max-width:750px) {
+@media screen and (max-width:781px) {
 
     #medium-nav {
-        display: block;
+        display: inline-flex;
+    }
+
+    #dropdown-nav-lecture {
+        justify-self: flex-end;
+        display: inline;
     }
 
     #dropdown-nav-menu {
+        justify-self: flex-end;
         display: inline;
     }
 
@@ -236,12 +242,8 @@ nav {
         display: none;
     }
 
-}
-
-@media screen and (max-width: 449px) {
 
 }
-
 
 
 

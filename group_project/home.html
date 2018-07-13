@@ -16,12 +16,14 @@
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
 </head>
 
 <body>
 
-<!---------------------------------------------------NAVIGATION BAR--------------------------------------------------->
+
+<!-- NAVIGATION BAR -->
 
 <nav class="flex-wrap" id="big-nav">
     <div class="flex-wrap nav-logo-title">
@@ -44,28 +46,52 @@
     </ul>
 </nav>
 
+
+
 <nav class="flex-wrap" id="medium-nav">
     <div class="flex-wrap nav-logo-title">
         <a href="http://www.bcit.ca" target="_blank"><img src="images/bcitLogo.png" alt="BCIT Logo"></a>
         <a href="#"><h1>COMP 1950</h1></a>
     </div>
 
-    <div class="dropdown show" id="dropdown-nav-menu">
-        <a class="dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
-           aria-haspopup="true" aria-expanded="false">
-            <i class="fas fa-bars"></i>
+    <div class="dropdown show align-self-center" id="dropdown-nav-lecture">
+        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownLectureLink"
+           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Lectures
         </a>
 
         <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">Action</a>
-            <a class="dropdown-item" href="#">Another action</a>
-            <a class="dropdown-item" href="#">Something else here</a>
+            <a class="dropdown-item" href="#">01: Tools, Standards</a>
+            <a class="dropdown-item" href="#">02: HTML 5</a>
+            <a class="dropdown-item" href="#">03: Advanced CSS</a>
+            <a class="dropdown-item" href="#">04: CSS Layouts</a>
+            <a class="dropdown-item" href="#">05: Responsive Design</a>
+            <a class="dropdown-item" href="#">06: CSS3</a>
+            <a class="dropdown-item" href="#">07: Javascript Frameworks</a>
+            <a class="dropdown-item" href="#">08: Server Architecture</a>
+            <a class="dropdown-item" href="#">09: Templates Tools</a>
+            <a class="dropdown-item" href="#">10: Methodology</a>
+        </div>
+    </div>
+    <div class="dropdown show align-self-center" id="dropdown-nav-menu">
+        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+           data-toggle="dropdown" aria-haspopup="true"
+           aria-expanded="false">
+            Other Links
+        </a>
+
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <a class="dropdown-item" href="#">About</a>
+            <a class="dropdown-item" href="#">Ressources</a>
+            <a class="dropdown-item" href="#">BCIT</a>
+            <a class="dropdown-item" href="#">myBCIT</a>
+            <a class="dropdown-item" href="#">D2L</a>
         </div>
     </div>
 
 </nav>
 
-<!-----------------------------------------------------SIDE MENU----------------------------------------------------->
+<!-- SIDE MENU -->
 
 <section id="lecture-menu">
     <h2>Lectures</h2>

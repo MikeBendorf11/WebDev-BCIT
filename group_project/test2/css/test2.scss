@@ -1,0 +1,37 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Helvetica;
+}
+ul{
+    padding-left: 20px;
+}
+
+a{
+    color: #007BFF;
+}
+
+li{
+    list-style: none;
+}
+header{
+    height: 60px;
+    background:lightskyblue;
+}
+
+.mid{
+    width: 964px;
+    margin: 0 auto;
+    border: 1px solid lightskyblue;
+    padding: 16px 15px 16px 30px;
+    .contblock{
+        background: #f7f7f9;
+    }
+
+    h2:first-child{
+        font-size: 48px;
+        font-weight: 300;
+        margin: 10px;
+       }
+    
+}

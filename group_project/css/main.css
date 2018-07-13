@@ -184,7 +184,8 @@ a h1{
     padding: 30px;
    background-image: url(../images/inner-content-bg.jpg);
    background-repeat: no-repeat;
-
+   height: 100vh;
+   overflow-y: scroll;
 }
 /*MAIN WINDOW*/
 

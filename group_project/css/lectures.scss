@@ -1,47 +1,121 @@
-// general style
-body{
-    margin: 0;
-    padding: 0;
+/*general style*/
+body {
+    background: #CCCCCC;
     font-family: Helvetica, sans-serif;
 }
 
-ul{
-    padding-left: 20px;
-    li{
-        list-style: none;
-        
-    }
+a:hover, li {
+    text-decoration: none;
 }
 
-a{
-    color: #007BFF;
-}
-
-img{
-    margin: 5px;
-}
-
-// header
+//header
 header{
-    height: 60px;
-    background:lightskyblue;
+    .navbar {
+        padding: 0;
+    }
+    img{
+    width: 50px;
+    height: 50px;
+    margin: 5px;
+    }
+    .navbar-text {
+    display: flex;
+        li{
+        list-style: none;
+        margin-right: 15px;
+        }
+        #navbarDropdown{
+            padding: 0;
+        }
+    }
+} 
+
+main{
+.row{
+    margin-top: 70px;
+    .col-lg-3{
+        padding: 0;
+        max-width: 250px;
+        width: 13%;
+        background: #fff;
+        height: 900px;
+        border: 1px solid rgba(0, 0, 0, 0.125);
+        .list-group-item {
+            border: 0px solid rgba(0, 0, 0, 0.125);
+            h2{
+                border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+                padding: 5px;
+            }
+            &:first-child{
+                padding-bottom: 0;
+            }
+        }
+    }
+    .col-lg-8{
+        max-width: 964px;
+        margin-left: 13%;
+        border: 1px solid lightskyblue;
+        padding: 16px 15px 16px 30px;
+        ul {
+            padding-left: 20px;
+        }
+        
+        ul li {
+            list-style: none;
+        }
+        
+        a {
+            color: #007BFF;
+        }
+        
+        img {
+            margin: 5px;
+        }
+            
+        .contblock {
+            background: #f7f7f9;
+            padding: 15px;
+        }
+        
+        h2:first-child {
+            font-size: 48px;
+            font-weight: 300;
+            margin: 10px;
+        }
+
+    }
+}
 }
 
-.mid{
-    width: 964px;
-    margin: 0 auto;
-    border: 1px solid lightskyblue;
-    padding: 16px 15px 16px 30px;
-    .contblock{
-        background: #f7f7f9;
-        padding: 15px;
+   
+
+@media screen and (max-width:800px){
+    header{
+       
+        span.navbar-text {
+        flex-direction:column;        
+    }
+    }
+    main{ 
+        .row{  
+        .col-lg-8{
+            font-size: 12px;
+            margin-left: 0;
+            padding: 0;
+                img{
+                    width: 95%;
+                    padding: 2px;
+                 }
+            h2{
+             font-size: 20px;               
+            }
+            .contblock{  
+                padding: 3px;
+            }
+        }
+    }
     }
 
-    h2:first-child{
-        font-size: 48px;
-        font-weight: 300;
-        margin: 10px;
-       }
 }
 
 

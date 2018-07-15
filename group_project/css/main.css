@@ -1,11 +1,15 @@
 /*Creators (in alphabetical order): Daniel Joo, Ivan Chen, Mijael Bendorf*/
 
 body {
-    background: #CCCCCC;
+    background: white;
 }
 
 a:hover, li {
     text-decoration: none;
+}
+
+ul {
+     list-style-type: none;
 }
 
 
@@ -39,7 +43,7 @@ nav {
     align-self: center;
     font-family: Helvetica, sans-serif;
     font-size: 24px;
-    color: #9C9C9C;
+    color: #5E5C5C;
     margin-left: 15px;
 }
 
@@ -47,6 +51,8 @@ nav {
     justify-self: flex-end;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    margin-bottom: 0px;
 }
 
 #nav-selections a {
@@ -88,31 +94,41 @@ nav {
 }
 
 
+#nav-selections i {
+    color: #5E5C5C;
+}
+
+
+
+#medium-nav {
+    display: none;
+}
+
+
 /*LECTURE SIDE MENU STYING*/
-
-
 #lecture-menu {
     width: 20vw;
-    min-width: 200px;
+    min-width: 250px;
     height: 92.1875vh;
     background-color: white;
-
+    margin-right: 7px;
 }
 
-#lecture-menu-flex {
-    flex-direction: column;
+#lecture-menu ul {
+    padding-left: 20px
 }
 
-#lecture-menu-flex li {
-    margin: 12px 0;
+#lecture-menu li {
+    margin: 6px 0;
 }
 
 #lecture-menu h2 {
     font-family: Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: #9C9C9C;
     text-align: center;
     padding-top: 20px;
+
 }
 
 #lecture-menu hr {
@@ -125,47 +141,120 @@ nav {
     margin: 10px;
 }
 
-#lecture-menu-flex a{
-    padding-left: 15px;
+#lecture-menu a{
     font-family: Helvetica, sans-serif;
     font-size: 18px;
 }
 
-#lecture-menu-flex .complete {
-    padding-left: 15px;
+#lecture-menu .complete {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
     color: #9C9C9C;
     transition: color 0.3s;
 }
 
-#lecture-menu-flex .complete:hover {
+#lecture-menu .complete:hover {
     color: #bababa;
     transition: color 0.3s;
 }
 
-#lecture-menu-flex .incomplete {
+#lecture-menu .incomplete {
     color: #459CFF;
     transition: color 0.3s;
 }
 
-#lecture-menu-flex .incomplete:hover {
+#lecture-menu .incomplete:hover {
     color: #67bfff;
     transition: color 0.3s;
 }
-
-
+#lecture-menu span{
+    color: #5E5C5C;
+}
+#brComp{
+    display: none;
+}
+a h1{
+    margin-bottom: 0px;
+}
+.content{
+    display: flex;
+    
+}
+.inner-content{
+    padding: 30px;
+   background-image: url(../images/inner-content-bg.jpg);
+   background-size: 100% 100%;
+   background-repeat: no-repeat;
+   height: 100vh;
+   overflow-y: scroll;
+}
 /*MAIN WINDOW*/
 
+/*anything below this width*/
+@media screen and (max-width:784px) {
 
+    #dropdown-nav-menu:last-of-type{
+      margin-right: 10px  
+    }
+    #medium-nav {
+        display: flex;
+    }
 
+    #dropdown-nav-menu button{
+        background-color: transparent;
+        border-color: #F7F7F7;
+        border-width: 1px;
+        color: #5E5C5C; 
+        margin-left: 5px;
+        margin-right: 5px;
+    }
 
+    #big-nav, #lecture-menu {
+        display: none;
+    }
 
-/*change media query at 750
-
-
-
-
-
-
-
+    #srch-term{
+        margin-left: 5px;
+        width: 150px
+    }
+    #input-responsive{
+        padding-top: 10px;
+        margin-right: 5px
+    }
+    
+    
+}
+@media screen and (max-width:650px) {
+    .inner-content{
+        margin-top: 65px
+    }
+}
+/*anything below this width*/
+@media screen and (max-width:450px) {
+    #brComp{
+        display: block;
+    }
+    .nav-logo-title h1{
+        font-size: 1.2em;
+        margin-left: 5px;
+    }
+    #dropdown-nav-menu button{
+        font-size: 0.9em;    
+    }
+    .inner-content{
+        margin-top: 55px
+    }
+    #srch-term{
+        min-width: 100px;
+        font-size: 0.9em;
+        height: 30px;    
+    }
+    .input-group .btn{
+        height: 30px;    
+        display: flex;
+    }
+    .input-group i{
+        font-size: 0.8em;
+        
+    }
+}

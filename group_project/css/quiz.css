@@ -1,7 +1,7 @@
 
 
 h1, li{ 
-  margin-top: 20px
+ 
 }
 
 textarea {
@@ -21,6 +21,14 @@ textarea {
   background-color: rgb(242, 245, 247)
 }
 
+#time{
+  float: right;
+  margin-top: 10px;
+  margin-right: 10px;
+
+
+}
+/*Deprecated*/
 .col-10 img{
   float: right;
   margin-top: 10px;
@@ -79,4 +87,12 @@ textarea {
   .banner .col-10{
     padding-left: 5px
   }
+  .inner-content{
+    padding: 30px 10px;
+
+  }
+  .inner-content ol{
+    padding-left: 30px
+  }
+
 }

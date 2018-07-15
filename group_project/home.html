@@ -9,74 +9,170 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>COMP 1950</title>
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
-          integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
-          crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
 </head>
 
 <body>
+    <!-- NAVIGATION BAR -->
 
-<!---------------------------------------------------NAVIGATION BAR--------------------------------------------------->
+    <nav class="flex-wrap" id="big-nav">
+        <div class="flex-wrap nav-logo-title">
+            <a href="http://www.bcit.ca" target="_blank">
+                <img src="images/bcitLogo.png" alt="BCIT Logo">
+            </a>
+            <a class="aComp" href="#">
+                <h1>COMP 1950</h1>
+            </a>
+        </div>
+        <ul class="flex-wrap" id="nav-selections">
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">Resources</a>
+            </li>
+            <li>
+                <a href="#">myBCIT</a>
+            </li>
+            <li>
+                <a href="#">D2L</a>
+            </li>
+            <li>
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search.." name="srch-term" id="srch-term">
+                    <div class="input-group-btn">
+                        <button class="btn btn-default" type="submit">
+                            <i class="fa fa-search"></i>
+                        </button>
+                    </div>
+                </div>
+            <li>
+        </ul>
+    </nav>
 
-<nav class="flex-wrap" id="big-nav">
+    <!-- MEDIUM BAR -->
 
-    <div class="flex-wrap nav-logo-title">
-        <a href="http://www.bcit.ca" target="_blank"><img src="images/bcitLogo.png" alt="BCIT Logo"></a>
-        <a href="#"><h1>COMP 1950</h1></a>
-    </div>
+    <nav class="flex-wrap" id="medium-nav">
+        <div class="flex-wrap nav-logo-title">
+            <a href="http://www.bcit.ca" target="_blank">
+                <img src="images/bcitLogo.png" alt="BCIT Logo">
+            </a>
+            <a class="aComp" href="#">
+                <h1>COMP
+                    <br id="brComp"> 1950</h1>
+            </a>
+        </div>
 
-    <ul class="flex-wrap" id="nav-selections">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">myBCIT</a></li>
-        <li><a href="#">D2L</a></li>
-        <li>
-            <div class="input-group">
+        <div class="dropdown show align-self-center" id="dropdown-nav-menu">
+            <button class="btn-outline-primary rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Lectures
+            </button>
+
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">01: Tools, Standards</a>
+                <a class="dropdown-item" href="#">02: HTML 5</a>
+                <a class="dropdown-item" href="#">03: Advanced CSS</a>
+                <a class="dropdown-item" href="#">04: CSS Layouts</a>
+                <a class="dropdown-item" href="#">05: Responsive Design</a>
+                <a class="dropdown-item" href="#">06: CSS3</a>
+                <a class="dropdown-item" href="#">07: Javascript Frameworks</a>
+                <a class="dropdown-item" href="#">08: Server Architecture</a>
+                <a class="dropdown-item" href="#">09: Templates Tools</a>
+                <a class="dropdown-item" href="#">10: Methodology</a>
+            </div>
+        </div>
+        <div class="dropdown show align-self-center" id="dropdown-nav-menu">
+            <button class="btn-outline-primary rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+                Other Links
+                </buttton>
+        
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                    <a class="dropdown-item" href="#">About</a>
+                    <a class="dropdown-item" href="#">Ressources</a>
+                    <a class="dropdown-item" href="#">BCIT</a>
+                    <a class="dropdown-item" href="#">myBCIT</a>
+                    <a class="dropdown-item" href="#">D2L</a>
+                </div>
+        </div>
+        <div id="input-responsive">
+            <div class="input-group ">
                 <input type="text" class="form-control" placeholder="Search.." name="srch-term" id="srch-term">
                 <div class="input-group-btn">
                     <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
                 </div>
             </div>
-        <li>
-    </ul>
+        </div>
+    </nav>
 
-</nav>
+    
+    <div class="content">
 
-<nav class="flex-wrap" id="small-nav">
-
-    <div class="flex-wrap nav-logo-title">
-        <a href="http://www.bcit.ca" target="_blank"><img src="images/bcitLogo.png" alt="BCIT Logo"></a>
-        <a href="#"><h1>COMP 1950</h1></a>
+        
+        <!-- SIDE MENU -->
+        <section id="lecture-menu">
+            <h2>Lectures</h2>
+            <hr>
+            <ul>
+                <li>
+                    <a href="lectures.html" class="complete">
+                        <span>01.</span> Tools & Standards</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>02.</span> HTML5</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>03.</span> Advanced CSS</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>04. </span>CSS Layouts</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>05. </span>Responsive Design</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>06. </span>CSS3</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>07. </span>Javascript Frameworks</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>08. </span>Server Architecture </a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>09.</span> Templates, Tools</a>
+                </li>
+                <li>
+                    <a href="#" class="complete">
+                        <span>10.</span> Methodology</a>
+                </li>
+            </ul>
+        </section>
+        <div class="inner-content">
+            <!-- YOUR CONTENT HERE -->
+            <p>
+                
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur incidunt iste suscipit fuga recusandae culpa, libero in hic. Esse magnam animi vel sint corporis cupiditate minima hic corrupti iusto, praesentium, laborum eum consequatur ex in labore possimus voluptate unde cumque dolore maxime quasi atque. Consequatur earum repudiandae corrupti soluta! Facilis sequi repudiandae ea magnam voluptatibus reprehenderit cupiditate! Sed, voluptatibus harum maiores eaque quasi accusamus dolores quis consequatur numquam labore, et nemo vero est vel commodi obcaecati quam neque nulla voluptates sunt rerum dolor? Nihil vitae quasi modi voluptatum provident magnam, earum sint atque harum aperiam labore debitis distinctio unde nesciunt quo magni excepturi molestias incidunt necessitatibus alias ea cum. Accusamus consequuntur provident perspiciatis delectus nostrum in rem impedit optio praesentium expedita ut, dolore omnis facilis, sed aut! Dolor velit praesentium adipisci deserunt error, pariatur voluptates cum? Perferendis nihil nobis optio maiores enim perspiciatis, rem molestias minus dicta et assumenda illum fugiat doloribus, quas voluptate ipsum commodi recusandae debitis adipisci aut neque! Velit necessitatibus libero asperiores vitae maxime eos explicabo maiores error odit, mollitia minima corrupti aut delectus quasi minus. Sed deserunt ipsam architecto doloribus sit animi excepturi beatae inventore! Ducimus quae officiis, labore ratione cupiditate animi voluptatem quidem maiores perferendis numquam odit exercitationem tempore illum. Recusandae deserunt quod tempore illum voluptates veritatis exercitationem dolorum nobis expedita magni velit hic error delectus neque, cumque rem cupiditate similique nulla beatae iure, ipsum eos ipsa debitis. Ducimus nemo quia labore obcaecati et ex, repellendus explicabo? Voluptates cum culpa suscipit vero provident voluptatem recusandae aperiam eius nihil, exercitationem, quas sint id optio facere atque! Tempora esse consequuntur, in adipisci dolores odit tempore eligendi maxime, amet facere, sequi voluptate enim repellendus eveniet qui. Omnis molestiae hic ipsam dignissimos! Est itaque qui ut autem consequuntur inventore, ipsa voluptate totam nihil maiores fuga quaerat eveniet quia?</p>
+        </div>
     </div>
-
-
-
-</nav>
-
-<!-----------------------------------------------------SIDE MENU----------------------------------------------------->
-
-<section id="lecture-menu">
-    <h2>Lectures</h2>
-    <hr>
-    <ul class="flex-wrap" id="lecture-menu-flex">
-        <li><a href="lectures.html" class="complete">01. Tools & Standards</a></li>
-        <li><a href="#" class="complete">02. HTML5</a></li>
-        <li><a href="#" class="complete">03. Advanced CSS</a></li>
-        <li><a href="#" class="complete">04. CSS Layouts</a></li>
-        <li><a href="#" class="complete">05. Responsive Design</a></li>
-        <li><a href="#" class="complete">06. CSS3</a></li>
-        <li><a href="#" class="incomplete">07. Javascript Frameworks</a></li>
-        <li><a href="#" class="incomplete">08. Server Architecture </a></li>
-        <li><a href="#" class="incomplete">09. Templates, Tools</a></li>
-        <li><a href="#" class="incomplete">10. Methodology</a></li>
-    </ul>
-</section>
-
+    
 </body>
 
 </html>

@@ -1,44 +1,129 @@
+/*general style*/
 body {
-  margin: 0;
-  padding: 0;
+  background: #CCCCCC;
   font-family: Helvetica, sans-serif;
 }
 
-ul {
-  padding-left: 20px;
+a:hover, li {
+  text-decoration: none;
 }
 
-ul li {
-  list-style: none;
+header .navbar {
+  padding: 0;
 }
 
-a {
-  color: #007BFF;
-}
-
-img {
+header img {
+  width: 50px;
+  height: 50px;
   margin: 5px;
 }
 
-header {
-  height: 60px;
-  background: lightskyblue;
+header .navbar-text {
+  display: flex;
 }
 
-.mid {
-  width: 964px;
-  margin: 0 auto;
+header .navbar-text li {
+  list-style: none;
+  margin-right: 15px;
+}
+
+header .navbar-text #navbarDropdown {
+  padding: 0;
+}
+
+main .row {
+  margin-top: 70px;
+}
+
+main .row .col-lg-3 {
+  padding: 0;
+  max-width: 250px;
+  width: 13%;
+  background: #fff;
+  height: 900px;
+  border: 1px solid rgba(0, 0, 0, 0.125);
+}
+
+main .row .col-lg-3 .list-group-item {
+  border: 0px solid rgba(0, 0, 0, 0.125);
+}
+
+main .row .col-lg-3 .list-group-item h2 {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
+  padding: 5px;
+}
+
+main .row .col-lg-3 .list-group-item:first-child {
+  padding-bottom: 0;
+}
+
+main .row .col-lg-8 {
+  max-width: 964px;
+  margin-left: 13%;
   border: 1px solid lightskyblue;
   padding: 16px 15px 16px 30px;
 }
 
-.mid .contblock {
+main .row .col-lg-8 ul {
+  padding-left: 20px;
+}
+
+main .row .col-lg-8 ul li {
+  list-style: none;
+}
+
+main .row .col-lg-8 a {
+  color: #007BFF;
+}
+
+main .row .col-lg-8 img {
+  margin: 5px;
+}
+
+main .row .col-lg-8 .contblock {
   background: #f7f7f9;
   padding: 15px;
 }
 
-.mid h2:first-child {
+main .row .col-lg-8 h2:first-child {
   font-size: 48px;
   font-weight: 300;
   margin: 10px;
+}
+
+@media screen and (max-width: 800px) {
+  header span.navbar-text {
+    flex-direction: column;
+  }
+  main .row .col-lg-8 {
+    font-size: 12px;
+    margin-left: 0;
+    padding: 0;
+  }
+  main .row .col-lg-8 img {
+    width: 95%;
+    padding: 2px;
+  }
+  main .row .col-lg-8 h2 {
+    font-size: 20px;
+  }
+  main .row .col-lg-8 .contblock {
+    padding: 3px;
+  }
+}
+
+/*my additions*/
+main{
+  margin-top: -70px;
+
+}
+.container-fluid .col-lg-3{
+  flex: 0 0 66.666667%;
+  
+}
+@media screen and (max-width: 651px){
+  main{
+    margin-top: 0px;
+  
+  }
 }

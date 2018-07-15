@@ -10,7 +10,6 @@ a:hover, li {
 
 header .navbar {
   padding: 0;
-<<<<<<< HEAD
 }
 
 header img {
@@ -23,20 +22,6 @@ header .navbar-text {
   display: flex;
 }
 
-=======
-}
-
-header img {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-}
-
-header .navbar-text {
-  display: flex;
-}
-
->>>>>>> refs/remotes/origin/master
 header .navbar-text li {
   list-style: none;
   margin-right: 15px;
@@ -126,8 +111,6 @@ main .row .col-lg-8 h2:first-child {
     padding: 3px;
   }
 }
-<<<<<<< HEAD
-=======
 
 /*my additions*/
 main{
@@ -144,4 +127,3 @@ main{
   
   }
 }
->>>>>>> refs/remotes/origin/master

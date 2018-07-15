@@ -18,8 +18,6 @@ nav {
     background-color: #F7F7F7;
     height: 60px;
     width: 100%;
-    position: fixed;
-    z-index: 100;
 }
 
 .flex-wrap {
@@ -108,9 +106,6 @@ nav {
     height: 92.1875vh;
     background-color: white;
     margin-right: 7px;
-    position: fixed;
-    z-index: 100;
-    display: block;
 }
 
 #lecture-menu ul {
@@ -176,34 +171,26 @@ nav {
 }
 
 a h1 {
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
 .content {
-    position: relative;
-    top: 60px;
     display: flex;
 }
 
 .inner-content {
-    position: relative;
-    background: #CCCCCC;
+    padding: 30px;
+    background-image: url(../images/inner-content-bg.jpg);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
     height: 100vh;
     overflow-y: scroll;
-    width: 80vw;
-    left: 20vw;
 }
 
 /*MAIN WINDOW*/
 
 /*anything below this width*/
 @media screen and (max-width: 784px) {
-
-    .inner-content {
-        position: relative;
-        left: 0;
-        width: 100%;
-    }
 
     #dropdown-nav-menu:last-of-type {
         margin-right: 10px
@@ -240,10 +227,7 @@ a h1 {
 
 @media screen and (max-width: 650px) {
     .inner-content {
-        position: relative;
-        right: 20vw;
-        margin-top: 65px;
-        width: 100%;
+        margin-top: 65px
     }
 }
 
@@ -263,7 +247,7 @@ a h1 {
     }
 
     .inner-content {
-        margin-top: 55px
+        margin-top: 55px;
     }
 
     #srch-term {

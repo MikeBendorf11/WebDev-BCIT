@@ -1,12 +1,59 @@
 /*Creators (in alphabetical order): Daniel Joo, Ivan Chen, Mijael Bendorf*/
 
-#content {
-    margin: 7px;
-    padding: 30px;
-    background: white;
+#content-head {
+    background-image: url("../images/oceanDivide.jpg");
+    background-position: 50% 40%;
+    background-size: 100%;
     border-radius: 5px;
+    font-family: Helvetica, sans-serif;
 }
 
-#content-head {
-    background-image: url("images/oceanDivide.jpg")
+#content-head h1 {
+    padding: 20px;
+    color: white;
+    font-family: Helvetica, sans-serif;
+    font-size: 38px;
 }
+
+#content-head h3 {
+    color: white;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
+}
+
+#content-body {
+    font-family: Helvetica, sans-serif;
+}
+
+#content-body h2 {
+    color: #5E5C5C;
+    font-size: 36px;
+    margin: 20px 0;
+}
+
+#content-body ul {
+    color: #9C9C9C;
+    font-size: 17px;
+}
+
+.announcement-box {
+    margin: 15px 0;
+}
+
+.announcement-box h4 {
+    color: #459CFF;
+}
+
+.announcement-box h5 {
+    color: #5E5C5C;
+    font-size: 17px;
+}
+
+.announcement-box p {
+    padding: 10px 0;
+    color: #5E5C5C;
+    font-size: 17px;
+}
+

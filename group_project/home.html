@@ -18,48 +18,69 @@
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
+
 </head>
 
 <body>
-
 
 <!-- NAVIGATION BAR -->
 
 <nav class="flex-wrap" id="big-nav">
     <div class="flex-wrap nav-logo-title">
-        <a href="http://www.bcit.ca" target="_blank"><img src="images/bcitLogo.png" alt="BCIT Logo"></a>
-        <a href="#"><h1>COMP 1950</h1></a>
+        <a href="http://www.bcit.ca" target="_blank">
+            <img src="images/bcitLogo.png" alt="BCIT Logo">
+        </a>
+        <a class="aComp" href="#">
+            <h1>COMP 1950</h1>
+        </a>
     </div>
     <ul class="flex-wrap" id="nav-selections">
-        <li><a href="#">About</a></li>
-        <li><a href="#">Resources</a></li>
-        <li><a href="#">myBCIT</a></li>
-        <li><a href="#">D2L</a></li>
+        <li>
+            <a href="#">About</a>
+        </li>
+        <li>
+            <a href="#">Resources</a>
+        </li>
+        <li>
+            <a href="#">myBCIT</a>
+        </li>
+        <li>
+            <a href="#">D2L</a>
+        </li>
         <li>
             <div class="input-group">
                 <input type="text" class="form-control" placeholder="Search.." name="srch-term" id="srch-term">
                 <div class="input-group-btn">
-                    <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+                    <button class="btn btn-default" type="submit">
+                        <i class="fa fa-search"></i>
+                    </button>
                 </div>
             </div>
         <li>
     </ul>
 </nav>
 
+<!-- MEDIUM BAR -->
 
 <nav class="flex-wrap" id="medium-nav">
     <div class="flex-wrap nav-logo-title">
-        <a href="http://www.bcit.ca" target="_blank"><img src="images/bcitLogo.png" alt="BCIT Logo"></a>
-        <a href="#"><h1>COMP 1950</h1></a>
+        <a href="http://www.bcit.ca" target="_blank">
+            <img src="images/bcitLogo.png" alt="BCIT Logo">
+        </a>
+        <a class="aComp" href="#">
+            <h1>COMP
+                <br id="brComp"> 1950</h1>
+        </a>
     </div>
 
-    <div class="dropdown show align-self-center" id="dropdown-nav-lecture">
-        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownLectureLink"
-           data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <div class="dropdown show align-self-center" id="dropdown-nav-menu">
+        <button class="btn-outline-primary rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
             Lectures
-        </a>
+        </button>
 
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownLectureLink">
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="#">01: Tools, Standards</a>
             <a class="dropdown-item" href="#">02: HTML 5</a>
             <a class="dropdown-item" href="#">03: Advanced CSS</a>
@@ -72,63 +93,138 @@
             <a class="dropdown-item" href="#">10: Methodology</a>
         </div>
     </div>
-
     <div class="dropdown show align-self-center" id="dropdown-nav-menu">
-        <a class="btn btn-outline-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
-           data-toggle="dropdown" aria-haspopup="true"
-           aria-expanded="false">
-            <i class="fas fa-bars"></i>
-        </a>
+        <button class="btn-outline-primary rounded dropdown-toggle" href="#" role="button" id="dropdownMenuLink"
+                data-toggle="dropdown"
+                aria-haspopup="true" aria-expanded="false">
+            Other Links
+            </buttton>
 
-        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuLink">
-            <a class="dropdown-item" href="#">About</a>
-            <a class="dropdown-item" href="#">Ressources</a>
-            <a class="dropdown-item" href="#">BCIT</a>
-            <a class="dropdown-item" href="#">myBCIT</a>
-            <a class="dropdown-item" href="#">D2L</a>
+            <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                <a class="dropdown-item" href="#">About</a>
+                <a class="dropdown-item" href="#">Ressources</a>
+                <a class="dropdown-item" href="#">BCIT</a>
+                <a class="dropdown-item" href="#">myBCIT</a>
+                <a class="dropdown-item" href="#">D2L</a>
+            </div>
+    </div>
+    <div id="input-responsive">
+        <div class="input-group ">
+            <input type="text" class="form-control" placeholder="Search.." name="srch-term" id="srch-term">
+            <div class="input-group-btn">
+                <button class="btn btn-default" type="submit"><i class="fa fa-search"></i></button>
+            </div>
         </div>
     </div>
-
 </nav>
 
 
-<div id="grid-container">
+<div class="content">
+
 
     <!-- SIDE MENU -->
-
     <section id="lecture-menu">
         <h2>Lectures</h2>
         <hr>
-        <ul class="flex-wrap" id="lecture-menu-flex">
-            <li><a href="lectures.html" class="complete">01. Tools & Standards</a></li>
-            <li><a href="#" class="complete">02. HTML5</a></li>
-            <li><a href="#" class="complete">03. Advanced CSS</a></li>
-            <li><a href="#" class="complete">04. CSS Layouts</a></li>
-            <li><a href="#" class="complete">05. Responsive Design</a></li>
-            <li><a href="#" class="complete">06. CSS3</a></li>
-            <li><a href="#" class="incomplete">07. Javascript Frameworks</a></li>
-            <li><a href="#" class="incomplete">08. Server Architecture </a></li>
-            <li><a href="#" class="incomplete">09. Templates, Tools</a></li>
-            <li><a href="#" class="incomplete">10. Methodology</a></li>
+        <ul>
+            <li>
+                <a href="lectures.html" class="complete">
+                    <span>01.</span> Tools & Standards</a>
+            </li>
+            <li>
+                <a href="#" class="complete">
+                    <span>02.</span> HTML5</a>
+            </li>
+            <li>
+                <a href="#" class="complete">
+                    <span>03.</span> Advanced CSS</a>
+            </li>
+            <li>
+                <a href="#" class="complete">
+                    <span>04. </span>CSS Layouts</a>
+            </li>
+            <li>
+                <a href="#" class="complete">
+                    <span>05. </span>Responsive Design</a>
+            </li>
+            <li>
+                <a href="#" class="complete">
+                    <span>06. </span>CSS3</a>
+            </li>
+            <li>
+                <a href="#" class="complete">
+                    <span>07. </span>Javascript Frameworks</a>
+            </li>
+            <li>
+                <a href="#" class="complete">
+                    <span>08. </span>Server Architecture </a>
+            </li>
+            <li>
+                <a href="#" class="complete">
+                    <span>09.</span> Templates, Tools</a>
+            </li>
+            <li>
+                <a href="#" class="complete">
+                    <span>10.</span> Methodology</a>
+            </li>
         </ul>
+
     </section>
+    <div class="inner-content">
+        <!-- YOUR CONTENT HERE -->
+        <div id="content">
+            <div id="content-head">
+                <h1>COMP 1950 - Web Development and Design 2</h1>
+                <h3>Monday & Wednesday<br>Instructor: Jeffrey Parker<br>jeffrey_parker@bcit.ca</h3>
+            </div>
+            <div id="content-body">
+                <h2>TO DO:</h2>
+                <ul>
+                    <li>-Download, review, and complete the homework assignment from D2L</li>
+                    <li>-Note this homework was assigned during Session #5, and is worth twice as much as
+                        other homework assignments</li>
+                    <li>-You have until before session #7 to complete this homework assignment</li>
+                    <li>-There will be no quiz on Session #7.</li>
+                </ul>
+                <h2>ANNOUNCEMENTS:</h2>
+                <div class="announcement-box">
+                    <h4>COMP1950, DTC, Mon/Wed Afternoons, Spring 2018</h4>
+                    <h5>Posted July 15, 2018 3:33 PM</h5>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam hendrerit nisi sed sollicitudin
+                        pellentesque. Nunc posuere purus rhoncus pulvinar aliquam. Ut aliquet tristique nisl vitae
+                        volutpat. Nulla aliquet porttitor venenatis. Donec a dui et dui fringilla consectetur id nec
+                        massa. Aliquam erat volutpat. Sed ut dui ut lacus dictum fermentum vel tincidunt neque. Sed
+                        sed lacinia lectus. Duis sit amet sodales felis. Duis nunc eros, mattis at dui ac, convallis
+                        semper risus. In adipiscing ultrices tellus, in suscipit massa vehicula eu.</p>
+                </div>
+            </div>
 
-    <!-- MAIN SECTION -->
-
-    <div id="main-interface">
-        <div id="interface-head">
-            <h1>alskjdflaksjdflkasjdflkasjdf</h1>
         </div>
-        <div id="interface-body">
-
-        </div>
+        <!--<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda pariatur incidunt iste suscipit fuga
+            recusandae culpa, libero in hic. Esse magnam animi vel sint corporis cupiditate minima hic corrupti iusto,
+            praesentium, laborum eum consequatur ex in labore possimus voluptate unde cumque dolore maxime quasi atque.
+            Consequatur earum repudiandae corrupti soluta! Facilis sequi repudiandae ea magnam voluptatibus
+            reprehenderit cupiditate! Sed, voluptatibus harum maiores eaque quasi accusamus dolores quis consequatur
+            numquam labore, et nemo vero est vel commodi obcaecati quam neque nulla voluptates sunt rerum dolor? Nihil
+            vitae quasi modi voluptatum provident magnam, earum sint atque harum aperiam labore debitis distinctio unde
+            nesciunt quo magni excepturi molestias incidunt necessitatibus alias ea cum. Accusamus consequuntur
+            provident perspiciatis delectus nostrum in rem impedit optio praesentium expedita ut, dolore omnis facilis,
+            sed aut! Dolor velit praesentium adipisci deserunt error, pariatur voluptates cum? Perferendis nihil nobis
+            optio maiores enim perspiciatis, rem molestias minus dicta et assumenda illum fugiat doloribus, quas
+            voluptate ipsum commodi recusandae debitis adipisci aut neque! Velit necessitatibus libero asperiores vitae
+            maxime eos explicabo maiores error odit, mollitia minima corrupti aut delectus quasi minus. Sed deserunt
+            ipsam architecto doloribus sit animi excepturi beatae inventore! Ducimus quae officiis, labore ratione
+            cupiditate animi voluptatem quidem maiores perferendis numquam odit exercitationem tempore illum. Recusandae
+            deserunt quod tempore illum voluptates veritatis exercitationem dolorum nobis expedita magni velit hic error
+            delectus neque, cumque rem cupiditate similique nulla beatae iure, ipsum eos ipsa debitis. Ducimus nemo quia
+            labore obcaecati et ex, repellendus explicabo? Voluptates cum culpa suscipit vero provident voluptatem
+            recusandae aperiam eius nihil, exercitationem, quas sint id optio facere atque! Tempora esse consequuntur,
+            in adipisci dolores odit tempore eligendi maxime, amet facere, sequi voluptate enim repellendus eveniet qui.
+            Omnis molestiae hic ipsam dignissimos! Est itaque qui ut autem consequuntur inventore, ipsa voluptate totam
+            nihil maiores fuga quaerat eveniet quia?</p>-->
     </div>
-
 </div>
 
 </body>
+
 </html>
-
-
-
-

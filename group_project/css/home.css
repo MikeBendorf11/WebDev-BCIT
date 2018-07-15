@@ -1,1 +1,12 @@
 /*Creators (in alphabetical order): Daniel Joo, Ivan Chen, Mijael Bendorf*/
+
+#content {
+    margin: 7px;
+    padding: 30px;
+    background: white;
+    border-radius: 5px;
+}
+
+#content-head {
+    background-image: url("images/oceanDivide.jpg")
+}

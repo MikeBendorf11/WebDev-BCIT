@@ -1,66 +1,7 @@
 /*Creators (in alphabetical order): Daniel Joo, Ivan Chen, Mijael Bendorf*/
 
-/* http://meyerweb.com/eric/tools/css/reset/
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-    display: block;
-}
-
 body {
-    line-height: 1;
-}
-
-ol, ul {
-    list-style: none;
-}
-
-blockquote, q {
-    quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-    content: '';
-    content: none;
-}
-
-table {
-    border-collapse: collapse;
-    border-spacing: 0;
-}
-
-/*********************************************************CODE*********************************************************/
-
-/*Creators (in alphabetical order): Daniel Joo, Ivan Chen, Mijael Bendorf*/
-
-body {
-    background: #CCCCCC;
+    background: white;
 }
 
 a:hover, li {
@@ -74,10 +15,11 @@ ul {
 /*NAVIGATION STYLING*/
 
 nav {
-    position: fixed;
     background-color: #F7F7F7;
     height: 60px;
     width: 100%;
+    position: fixed;
+    z-index: 100;
 }
 
 .flex-wrap {
@@ -91,24 +33,26 @@ nav {
     align-items: center;
 }
 
-.nav-logo-title h1 {
-    align-self: center;
-    font-family: Helvetica, sans-serif;
-    font-size: 24px;
-    color: #9C9C9C;
-    margin-left: 15px;
-}
-
 .nav-logo-title img {
     width: 50px;
     height: 50px;
     margin: 5px;
 }
 
+.nav-logo-title h1 {
+    align-self: center;
+    font-family: Helvetica, sans-serif;
+    font-size: 24px;
+    color: #5E5C5C;
+    margin-left: 15px;
+}
+
 #nav-selections {
     justify-self: flex-end;
     justify-content: center;
     align-items: center;
+    padding-left: 10px;
+    margin-bottom: 0px;
 }
 
 #nav-selections a {
@@ -157,40 +101,33 @@ nav {
     display: none;
 }
 
-/*GRID LAYOUT*/
-
-#grid-container {
-    display: grid;
-    grid-template-areas: "menu content";
-    grid-template-columns: 20% 80%;
-}
-
 /*LECTURE SIDE MENU STYING*/
-
 #lecture-menu {
-    display: block;
-    grid-area: menu;
+    width: 20vw;
     min-width: 250px;
     height: 92.1875vh;
     background-color: white;
+    margin-right: 7px;
     position: fixed;
-    top: 60px;
+    z-index: 100;
+    display: block;
 }
 
-#lecture-menu-flex {
-    flex-direction: column;
+#lecture-menu ul {
+    padding-left: 20px
 }
 
-#lecture-menu-flex li {
-    margin: 12px 0;
+#lecture-menu li {
+    margin: 15px 0;
 }
 
 #lecture-menu h2 {
     font-family: Helvetica, sans-serif;
-    font-size: 24px;
+    font-size: 20px;
     color: #9C9C9C;
     text-align: center;
     padding-top: 20px;
+
 }
 
 #lecture-menu hr {
@@ -203,113 +140,145 @@ nav {
     margin: 10px;
 }
 
-#lecture-menu-flex a {
-    padding-left: 15px;
+#lecture-menu a {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
 }
 
-#lecture-menu-flex .complete {
-    padding-left: 15px;
+#lecture-menu .complete {
     font-family: Helvetica, sans-serif;
     font-size: 18px;
     color: #9C9C9C;
     transition: color 0.3s;
 }
 
-#lecture-menu-flex .complete:hover {
+#lecture-menu .complete:hover {
     color: #bababa;
     transition: color 0.3s;
 }
 
-#lecture-menu-flex .incomplete {
+#lecture-menu .incomplete {
     color: #459CFF;
     transition: color 0.3s;
 }
 
-#lecture-menu-flex .incomplete:hover {
+#lecture-menu .incomplete:hover {
     color: #67bfff;
     transition: color 0.3s;
 }
 
-/*MAIN WINDOW*/
-
-#main-interface {
-    grid-area: content;
-    display: block;
-    position: relative;
-    top: 60px;
-    float: right;
-    margin: 7px;
-    color: #138496;
-    height: 92.1875vh;
+#lecture-menu span {
+    color: #5E5C5C;
 }
 
-@media screen and (max-width: 781px) and (min-width: 431px) {
+#brComp {
+    display: none;
+}
 
-    .nav-logo-title h1 {
-        align-self: center;
-        font-family: Helvetica, sans-serif;
-        font-size: 24px;
-        color: #9C9C9C;
-        margin-left: 15px;
+a h1 {
+    margin-bottom: 0px;
+}
+
+.content {
+    position: relative;
+    top: 60px;
+    display: flex;
+}
+
+.inner-content {
+    position: relative;
+    background: #CCCCCC;
+    height: 100vh;
+    overflow-y: scroll;
+    width: 80vw;
+    left: 20vw;
+}
+
+/*MAIN WINDOW*/
+
+/*anything below this width*/
+@media screen and (max-width: 784px) {
+
+    .inner-content {
+        position: relative;
+        left: 0;
+        width: 100%;
     }
 
-    .dropdown-menu a {
-        margin: 10px 0;
-        font-family: Helvetica, sans-serif;
-        font-size: 18px;
-        color: #5E5C5C;
-        transition: color 0.3s;
-    }
-
-    .dropdown-menu a:hover {
-        color: #9C9C9C;
-        transition: color 0.3s;
-    }
-
-    .btn-outline-primary, .dropdown-toggle {
-        font-family: Helvetica, sans-serif;
-    }
-
-    #dropdown-nav-lecture a {
-        font-family: Helvetica, sans-serif;
+    #dropdown-nav-menu:last-of-type {
+        margin-right: 10px
     }
 
     #medium-nav {
-        position: fixed;
-        display: inline-flex;
+        display: flex;
     }
 
-    #dropdown-nav-lecture {
-        justify-self: flex-end;
-        display: inline;
-    }
-
-    #dropdown-nav-menu {
-        justify-self: end;
-        display: inline;
-        margin-right: 15px;
+    #dropdown-nav-menu button {
+        background-color: transparent;
+        border-color: #F7F7F7;
+        border-width: 1px;
+        color: #5E5C5C;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 
     #big-nav, #lecture-menu {
         display: none;
     }
 
-}
+    #srch-term {
+        margin-left: 5px;
+        width: 150px
+    }
 
-
-@media screen and (max-width: 431px) {
-
-
-
-    #big-nav, #lecture-menu {
-        display: none;
+    #input-responsive {
+        padding-top: 10px;
+        margin-right: 5px
     }
 
 }
 
+@media screen and (max-width: 650px) {
+    .inner-content {
+        position: relative;
+        right: 20vw;
+        margin-top: 65px;
+        width: 100%;
+    }
+}
 
+/*anything below this width*/
+@media screen and (max-width: 450px) {
+    #brComp {
+        display: block;
+    }
 
+    .nav-logo-title h1 {
+        font-size: 1.2em;
+        margin-left: 5px;
+    }
 
+    #dropdown-nav-menu button {
+        font-size: 0.9em;
+    }
 
+    .inner-content {
+        margin-top: 55px
+    }
+
+    #srch-term {
+        min-width: 100px;
+        font-size: 0.9em;
+        height: 30px;
+    }
+
+    .input-group .btn {
+        height: 30px;
+        display: flex;
+    }
+
+    .input-group i {
+        font-size: 0.8em;
+
+    }
+}

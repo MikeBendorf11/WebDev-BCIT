@@ -3,14 +3,10 @@
   <component name="ChangeListManager">
     <list default="true" id="14729779-de88-4e8f-9465-c65035a1b5b1" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/group_project/css/home.css" afterPath="$PROJECT_DIR$/group_project/css/home.css" />
-      <change beforePath="$PROJECT_DIR$/group_project/css/lectures.css" afterPath="$PROJECT_DIR$/group_project/css/lectures.css" />
-      <change beforePath="$PROJECT_DIR$/group_project/css/main.css" afterPath="$PROJECT_DIR$/group_project/css/main.css" />
-      <change beforePath="$PROJECT_DIR$/group_project/css/quiz.css" afterPath="$PROJECT_DIR$/group_project/css/quiz.css" />
+      <change beforePath="$PROJECT_DIR$/group-project-meta-site/meta-index.html" afterPath="$PROJECT_DIR$/group-project-meta-site/meta-index.html" />
+      <change beforePath="$PROJECT_DIR$/group-project-meta-site/meta-style.css" afterPath="$PROJECT_DIR$/group-project-meta-site/meta-style.css" />
       <change beforePath="$PROJECT_DIR$/group_project/home.html" afterPath="$PROJECT_DIR$/group_project/home.html" />
-      <change beforePath="$PROJECT_DIR$/group_project/images/oceanDivide.jpg" afterPath="$PROJECT_DIR$/group_project/images/oceanDivide.jpg" />
       <change beforePath="$PROJECT_DIR$/group_project/lectures.html" afterPath="$PROJECT_DIR$/group_project/lectures.html" />
-      <change beforePath="$PROJECT_DIR$/group_project/quiz.html" afterPath="$PROJECT_DIR$/group_project/quiz.html" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -24,18 +20,61 @@
       <file leaf-file-name="home.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group_project/home.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="206">
-              <caret line="172" column="31" lean-forward="false" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
+            <state relative-caret-position="309">
+              <caret line="186" column="30" lean-forward="false" selection-start-line="186" selection-start-column="30" selection-end-line="186" selection-end-column="30" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="lectures.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group_project/lectures.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="398">
+              <caret line="198" column="53" lean-forward="false" selection-start-line="198" selection-start-column="53" selection-end-line="198" selection-end-column="53" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="lectures.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group_project/css/lectures.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1052">
+              <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meta-index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/group-project-meta-site/meta-index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="500">
+              <caret line="86" column="63" lean-forward="false" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+              <folding>
+                <element signature="e#3157#3163#0" expanded="true" />
+                <element signature="e#4167#4173#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="meta-style.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/group-project-meta-site/meta-style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="338">
+              <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="home.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/group_project/css/home.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="434">
-              <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+            <state relative-caret-position="600">
+              <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -76,15 +115,15 @@
         <option value="$PROJECT_DIR$/group-project-meta-site/index.html" />
         <option value="$PROJECT_DIR$/group-project-meta-site/style.css" />
         <option value="$PROJECT_DIR$/group-project-meta-site/meta-script.js" />
-        <option value="$PROJECT_DIR$/group-project-meta-site/meta-style.css" />
-        <option value="$PROJECT_DIR$/group-project-meta-site/meta-index.html" />
-        <option value="$PROJECT_DIR$/group_project/lectures.html" />
         <option value="$PROJECT_DIR$/group_project/css/lectures.css" />
         <option value="$PROJECT_DIR$/group_project/quiz.html" />
         <option value="$PROJECT_DIR$/group_project/css/quiz.css" />
         <option value="$PROJECT_DIR$/group_project/css/main.css" />
-        <option value="$PROJECT_DIR$/group_project/home.html" />
         <option value="$PROJECT_DIR$/group_project/css/home.css" />
+        <option value="$PROJECT_DIR$/group-project-meta-site/meta-style.css" />
+        <option value="$PROJECT_DIR$/group_project/home.html" />
+        <option value="$PROJECT_DIR$/group_project/lectures.html" />
+        <option value="$PROJECT_DIR$/group-project-meta-site/meta-index.html" />
       </list>
     </option>
   </component>
@@ -248,6 +287,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2925">
           <caret line="195" column="0" lean-forward="true" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -255,6 +295,10 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="810">
           <caret line="54" column="30" lean-forward="true" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
+          <folding>
+            <element signature="e#3157#3163#0" expanded="true" />
+            <element signature="e#4167#4173#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -269,20 +313,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="435">
           <caret line="29" column="69" lean-forward="false" selection-start-line="29" selection-start-column="69" selection-end-line="29" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-project-meta-site/meta-style.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2925">
-          <caret line="195" column="0" lean-forward="false" selection-start-line="195" selection-start-column="0" selection-end-line="195" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group-project-meta-site/meta-index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="366">
-          <caret line="54" column="30" lean-forward="false" selection-start-line="54" selection-start-column="30" selection-end-line="54" selection-end-column="30" />
         </state>
       </provider>
     </entry>
@@ -302,32 +332,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group_project/lectures.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="6332">
-          <caret line="812" column="7" lean-forward="false" selection-start-line="812" selection-start-column="7" selection-end-line="812" selection-end-column="7" />
-          <folding>
-            <element signature="e#20769#20774#0" expanded="true" />
-            <element signature="e#21147#21152#0" expanded="true" />
-            <element signature="e#30585#30590#0" expanded="true" />
-            <element signature="e#30613#30617#0" expanded="true" />
-            <element signature="e#30618#30622#0" expanded="true" />
-            <element signature="e#35465#35469#0" expanded="true" />
-            <element signature="e#35519#35523#0" expanded="true" />
-            <element signature="e#35531#35535#0" expanded="true" />
-            <element signature="e#35537#35541#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/group_project/css/lectures.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="0" lean-forward="false" selection-start-line="1" selection-start-column="0" selection-end-line="112" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/group_project/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
@@ -336,19 +340,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group_project/home.html">
+    <entry file="file://$PROJECT_DIR$/group_project/css/home.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="206">
-          <caret line="172" column="31" lean-forward="false" selection-start-line="172" selection-start-column="31" selection-end-line="172" selection-end-column="31" />
+        <state relative-caret-position="600">
+          <caret line="40" column="19" lean-forward="false" selection-start-line="40" selection-start-column="19" selection-end-line="40" selection-end-column="19" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/group_project/css/home.css">
+    <entry file="file://$PROJECT_DIR$/group-project-meta-site/meta-style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="434">
-          <caret line="46" column="1" lean-forward="true" selection-start-line="46" selection-start-column="1" selection-end-line="46" selection-end-column="1" />
+        <state relative-caret-position="338">
+          <caret line="91" column="1" lean-forward="true" selection-start-line="91" selection-start-column="1" selection-end-line="91" selection-end-column="1" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group_project/home.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="309">
+          <caret line="186" column="30" lean-forward="false" selection-start-line="186" selection-start-column="30" selection-end-line="186" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group_project/css/lectures.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1052">
+          <caret line="20" column="21" lean-forward="true" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group_project/lectures.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="398">
+          <caret line="198" column="53" lean-forward="false" selection-start-line="198" selection-start-column="53" selection-end-line="198" selection-end-column="53" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/group-project-meta-site/meta-index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="500">
+          <caret line="86" column="63" lean-forward="false" selection-start-line="86" selection-start-column="63" selection-end-line="86" selection-end-column="63" />
+          <folding>
+            <element signature="e#3157#3163#0" expanded="true" />
+            <element signature="e#4167#4173#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

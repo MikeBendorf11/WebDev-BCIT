@@ -13,7 +13,7 @@
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
         crossorigin="anonymous">
     <link href="css/bootstrap.css" rel="stylesheet">
-
+    
     <link href="css/main.css" rel="stylesheet">
     <link href="css/home.css" rel="stylesheet">
     <link rel="stylesheet" href="css/quiz.css">
@@ -26,14 +26,18 @@
         setInterval(function () {
           minutes = parseInt(timer / 60, 10)
           seconds = parseInt(timer % 60, 10);
+
           minutes = minutes < 10 ? "0" + minutes : minutes;
           seconds = seconds < 10 ? "0" + seconds : seconds;
+
           display.innerHTML = "<b>\u231A</b> " + minutes + ":" + seconds;
+
           if (--timer < 0) {
             timer = duration;
           }
         }, 1000);
       }
+
       window.onload = function () {
         var minutesLeft = 60 * 20,
           display = document.querySelector('#time');
@@ -121,7 +125,7 @@
                 aria-haspopup="true" aria-expanded="false">
                 Other Links
                 </buttton>
-
+        
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="#">About</a>
                     <a class="dropdown-item" href="#">Ressources</a>
@@ -140,10 +144,10 @@
         </div>
     </nav>
 
-
+    
     <div class="content">
 
-
+        
         <!-- SIDE MENU -->
         <section id="lecture-menu">
             <h2>Lectures</h2>
@@ -216,7 +220,7 @@
                   Lorem
                   <mark>__________</mark> sit amet consectetur adipisicing elit. Aspernatur, unde?
                 </p>
-
+    
                 <div class="custom-control custom-checkbox custom-control-inline">
                   <input type="checkbox" class="custom-control-input" id="customCheck1">
                   <label class="custom-control-label" for="customCheck1">One</label>
@@ -271,7 +275,7 @@
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur, optio. Write some code:
                 </p>
                 <textarea id="area1" rows="4">
-
+    
                 </textarea>
               </li>
             </ol>
@@ -280,7 +284,7 @@
             <br>
         </div>
     </div>
-
+    
 </body>
 
 </html>

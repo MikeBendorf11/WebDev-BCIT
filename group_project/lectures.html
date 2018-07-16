@@ -13,18 +13,18 @@
         crossorigin="anonymous">
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="css/main.css" rel="stylesheet">
-    <link href="css/home.css" rel="stylesheet">
+    <link href="css/lectures.css" rel="stylesheet" >
+    <link href="iconfont/iconfont.css" rel="stylesheet" >
     <link rel="icon" href="images/web.png">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
     <script src="js/bootstrap.js"></script>
   <script>
         $(function () {
-            $(".contblock>ul>li").prepend("<span></span>");
-            $(".contblock>ul>li>span").addClass("iconfont icon-jingdiananli_kongwujiaoxing_shoucang");
-            $(".contblock>ul>li>ul>li").prepend("<span></span>");
-            $(".contblock>ul>li>ul>li>span").addClass("iconfont icon-jiantouyou");
-
+          $(".contblock>ul>li").prepend("<span></span>");
+          $(".contblock>ul>li>span").addClass("iconfont icon-jingdiananli_kongwujiaoxing_shoucang");
+          $(".contblock>ul>li>ul>li").prepend("<span></span>");
+          $(".contblock>ul>li>ul>li>span").addClass("iconfont icon-jiantouyou");      
         })
     </script>
 </head>
@@ -104,7 +104,7 @@
                 aria-haspopup="true" aria-expanded="false">
                 Other Links
                 </buttton>
-
+        
                 <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
                     <a class="dropdown-item" href="#">About</a>
                     <a class="dropdown-item" href="#">Ressources</a>
@@ -123,10 +123,10 @@
         </div>
     </nav>
 
-
+    
     <div class="content">
 
-
+        
         <!-- SIDE MENU -->
         <section id="lecture-menu">
             <h2>Lectures</h2>
@@ -193,14 +193,12 @@
                       <a href="#standards">Standards based development</a>
                     </li>
                     <li>
+      
                       <a href="#todo">To Do</a>
-                    </li>
-                    <li>
-                        <a href="quiz.html">Take Quiz</a>
                     </li>
                   </ul>
                 </div>
-
+      
                 <h2 id="introductions">Introductions</h2>
                 <div class="contblock">
                   <ul>
@@ -221,8 +219,8 @@
                     </li>
                   </ul>
                 </div>
-
-
+      
+      
                 <h2>Course Overview</h2>
                 <div class="contblock">
                   <p>Learn more
@@ -230,7 +228,7 @@
                   <p>Review the
                     <a href="/1950/resources/">COMP1950 resources</a> available to help you with this course.</p>
                 </div>
-
+      
                 <h2 id="orientation">Orientation: Sharefile</h2>
                 <div class="contblock">
                   <p>BCIT lab computers are re-imaged each day. Files you save on the local C: drive of a lab computer will be erased
@@ -243,7 +241,7 @@
                     <li>Use your own laptop in class, and dont use the BCIT lab computers</li>
                   </ul>
                 </div>
-
+      
                 <h2>Orientation: Course Materials</h2>
                 <div class="contblock">
                   <p>COMP 1950 homework assignments, quizzes, in class exercises and example code can be accessed via
@@ -254,7 +252,7 @@
                     <code>604-412-7444</code> (Toll free:
                     <code>1-800-351-5533</code>).</p>
                 </div>
-
+      
                 <h2 id="student_webspace">Orientation: Web space</h2>
                 <div class="contblock">
                   <p>Each student will get a personal webspace where you will publish your homework assignments. This is not a continuation
@@ -277,11 +275,11 @@
                       <em>http://bcitcomp.ca/students/yourname123</em>'
                       <br/>For example:
                       <code>http://bcitcomp.ca/students/your_bcit_email_name</code>
-
+      
                     </li>
                   </ul>
                 </div>
-
+      
                 <h2>Connect to your bcitcomp.ca account via FTP</h2>
                 <div class="contblock">
                   <p>Use Filezilla, or any FTP client to connect to bcitcomp.ca. The bcitcomp.ca server provides you with a space
@@ -313,8 +311,8 @@
                   </ol>
                   <img src="images/filezilla_screenshot.png" alt="Filezilla FTP login screenshot" />
                 </div>
-
-
+      
+      
                 <h2 id="tools">Tools: Visual Studio Code</h2>
                 <div class="contblock">
                   <p>There are several development tools to choose from. In COMP 1950 we will use the open source Integrated Devlopment
@@ -326,18 +324,18 @@
                   <p>VS Code should already be installed on COMP1950 lab computers. The executable is found at
                     <code>C:/Program Files/Microsoft VS Code/Code.exe</code>
                   </p>
-
+      
                   <h3>Laptop / Home Desktop</h3>
                   <p>
                     <a href="https://code.visualstudio.com/#alt-downloads">Download VS Code</a> for Windows, Mac or Linux.</p>
-
+      
                   <h3>Exploring VS Code</h3>
-
+      
                   <p>Your instructor will demonstrate some of it's capabilities in class. On your own time, you may wish to review
                     the
                     <a href="https://code.visualstudio.com/docs">help documentation</a> 'Get Started' section to give yourself a better understanding of some of the basic features
                     and functions provided by VS Code.</p>
-
+      
                   <ul>
                     <li>
                       <a href="https://code.visualstudio.com/docs/introvideos/basics">Setup and basics of VS Code</a>
@@ -347,7 +345,7 @@
                     </li>
                   </ul>
                 </div>
-
+      
                 <h2>Tools: Browser-based development</h2>
                 <div class="contblock">
                   <p>There are three major web browser platforms to consider:</p>
@@ -406,9 +404,9 @@
                   </p>
                 </div>
                 <!-- END .contblock -->
-
-
-
+      
+      
+      
                 <h2>Tools: Extensions</h2>
                 <div class="contblock">
                   <p>Extensions can add more functionality and features to your development browser.</p>
@@ -433,7 +431,7 @@
                     <li>Etc, etc!</li>
                   </ul>
                 </div>
-
+      
                 <h2>Browser Based Diagnostic Tools</h2>
                 <div class="contblock">
                   <p>As web pages get more complex, it can become difficult figuring out what is going on. For example, CSS rules
@@ -456,7 +454,7 @@
                       <a href="https://docs.microsoft.com/en-us/microsoft-edge/f12-devtools-guide">Edge</a>
                     </li>
                   </ul>
-
+      
                   <p>Get familiar with using one of these tools. They are invaluable for understanding code and for finding, diagnosing,
                     and fixing problems with code. You will be required to use them in the classes ahead. Practice adding/editing/removing
                     both HTML and CSS using your development browser's built in tools.</p>
@@ -480,7 +478,7 @@
                   <p>The capabilities of these browser tools go well beyond outlining, examining and editing. They provide deep troubleshooting
                     capabilities of the HTTP network, javascript and even XHR (XMLHttpRequest).</p>
                 </div>
-
+      
                 <h2 id="standards">Standards: W3C</h2>
                 <div class="contblock">
                   <p>Just as those who manufacture physical goods are expected to follow the
@@ -488,9 +486,9 @@
                     described by the
                     <a href="http://www.w3.org/">World Wide Web Consortium (W3C)</a>
                   </p>
-
+      
                   <h3>W3C: World Wide Web Consortium</h3>
-
+      
                   <ul>
                     <li>Web standards have gone through the same process that the ISO went through</li>
                     <li>Many companies see the benefits of interoperability - a few are still "forging their own"</li>
@@ -502,7 +500,7 @@
                     <li>Designers were 'taking sides' in the browser wars: users were losers</li>
                     <li>Most modern browsers are fairly standards compliant</li>
                   </ul>
-
+      
                   <h3>W3C Goals</h3>
                   <ol>
                     <li>
@@ -534,7 +532,7 @@
                   <p>Learn more abou the W3C and standards based devlopment from the
                     <a href="http://www.webstandards.org/learn/faq/">Web Standards Project</a>.</p>
                 </div>
-
+      
                 <h2>Standards: Web Development</h2>
                 <div class="contblock">
                   <h3>Three goals of standards-driven web development:</h3>
@@ -557,9 +555,9 @@
                       <a href="http://www.webbie.org.uk/">Webbie</a>
                     </li>
                   </ul>
-
+      
                 </div>
-
+      
                 <h2>Standards: File and Folder Naming</h2>
                 <div class="contblock">
                   <p>HTTP urls cannot contain certain characters, and certain characters will cause unwanted effects and behaviours
@@ -585,7 +583,7 @@
                       <code>/hockey/nhl/canucks</code>). </li>
                   </ul>
                 </div>
-
+      
                 <h2>Standards: File Management</h2>
                 <div class="contblock">
                   <ul>
@@ -609,7 +607,7 @@
                       in a place where users are not going to accidentally find them</li>
                   </ul>
                 </div>
-
+      
                 <h2 id="coding_standards">Standards: Code Style and Organization</h2>
                 <div class="contblock">
                   <p>In COMP1950 students are expected to present a readable, well organized code style:</p>
@@ -653,7 +651,7 @@
                     </li>
                   </ul>
                 </div>
-
+      
                 <h2>Semantic Markup</h2>
                 <div class="contblock">
                   <p>Highly
@@ -671,7 +669,7 @@
                     <li>
                       <strong>IMPORTANT</strong>: Separate Content (HTML) from Presentation (CSS)</li>
                   </ul>
-
+      
                   <h3>Building Content Relationships</h3>
                   <ul>
                     <li>Use appropriate tags for headings, content, sub-content, lists</li>
@@ -680,7 +678,7 @@
                     <li>Headings summarize the following content</li>
                     <li>Citations, quotes, code samples can be contextualized by nearest heading</li>
                   </ul>
-
+      
                   <h3>Logical vs. Physical Styles</h3>
                   <ul>
                     <li>Tend to display identically in browsers, but are fundamentally different</li>
@@ -705,7 +703,7 @@
                       </ul>
                     </li>
                   </ul>
-
+      
                   <h3>Logical Styling</h3>
                   <ul>
                     <li>Best way to markup content for long-term usage</li>
@@ -765,7 +763,7 @@
                       </ul>
                     </li>
                   </ul>
-
+      
                   <h3>Key Advantages Of Semantic Content</h3>
                   <ul>
                     <li>Content is relational - context can be determined easily</li>
@@ -778,7 +776,7 @@
                     <li>Separating style (CSS) from structure (HTML), makes it easier to maintain</li>
                   </ul>
                 </div>
-
+      
                 <h2 id="todo">To Do</h2>
                 <div class="contblock">
                   <ul>
@@ -809,7 +807,7 @@
               </div>
         </div>
     </div>
-
+    
 </body>
 
 </html>

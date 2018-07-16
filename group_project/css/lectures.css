@@ -1,129 +1,135 @@
-/*general style*/
-body {
-  background: #CCCCCC;
-  font-family: Helvetica, sans-serif;
+.inner-content > div {
+  width: 80%;
+  padding-left: 2em;
 }
 
-a:hover, li {
-  text-decoration: none;
-}
-
-header .navbar {
-  padding: 0;
-}
-
-header img {
-  width: 50px;
-  height: 50px;
-  margin: 5px;
-}
-
-header .navbar-text {
-  display: flex;
-}
-
-header .navbar-text li {
-  list-style: none;
-  margin-right: 15px;
-}
-
-header .navbar-text #navbarDropdown {
-  padding: 0;
-}
-
-main .row {
-  margin-top: 70px;
-}
-
-main .row .col-lg-3 {
-  padding: 0;
-  max-width: 250px;
-  width: 13%;
-  background: #fff;
-  height: 900px;
-  border: 1px solid rgba(0, 0, 0, 0.125);
-}
-
-main .row .col-lg-3 .list-group-item {
-  border: 0px solid rgba(0, 0, 0, 0.125);
-}
-
-main .row .col-lg-3 .list-group-item h2 {
-  border-bottom: 2px solid rgba(0, 0, 0, 0.125);
-  padding: 5px;
-}
-
-main .row .col-lg-3 .list-group-item:first-child {
-  padding-bottom: 0;
-}
-
-main .row .col-lg-8 {
-  max-width: 964px;
-  margin-left: 13%;
-  border: 1px solid lightskyblue;
-  padding: 16px 15px 16px 30px;
-}
-
-main .row .col-lg-8 ul {
-  padding-left: 20px;
-}
-
-main .row .col-lg-8 ul li {
-  list-style: none;
-}
-
-main .row .col-lg-8 a {
+.inner-content > div a {
   color: #007BFF;
 }
 
-main .row .col-lg-8 img {
+.inner-content > div img {
   margin: 5px;
+  max-width: 95%;
 }
 
-main .row .col-lg-8 .contblock {
-  background: #f7f7f9;
-  padding: 15px;
+.inner-content > div h2 {
+  margin: 0.5em 0;
 }
 
-main .row .col-lg-8 h2:first-child {
-  font-size: 48px;
+.inner-content > div h2:first-child {
+  font-size: 3em;
   font-weight: 300;
   margin: 10px;
+  text-shadow: 2px -2px 5px gray;
+}
+
+.inner-content > div .contblock {
+  background: #f7f7f9;
+  padding: 1em;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px grey;
+}
+
+.inner-content > div .contblock:first-of-type a {
+  color: #000;
+}
+
+.inner-content > div .contblock ul,
+.inner-content > div .contblock ol {
+  padding-left: 1.8em;
+}
+
+.inner-content > div .contblock li {
+  position: relative;
+}
+
+.inner-content > div .contblock li .iconfont {
+  position: absolute;
+  left: -20px;
+  top: 0;
 }
 
 @media screen and (max-width: 800px) {
-  header span.navbar-text {
-    flex-direction: column;
+  .inner-content {
+    padding: 1em;
   }
-  main .row .col-lg-8 {
-    font-size: 12px;
-    margin-left: 0;
+  .inner-content > div {
+    padding-left: 0;
+    width: 100%;
+  }
+  .inner-content h2 {
+    font-size: 1.5em;
+  }
+  .inner-content .contblock {
+    padding: 0.5em;
+  }
+}
+
+@media print {
+  /*Print Styling: Hiding Elements*/
+  #big-nav {
+    border-bottom: 1px solid #000;
+  }
+  #big-nav a {
+    text-decoration: none;
+  }
+  #big-nav a[href^="http"], #big-nav .input-group {
+    display: none;
+  }
+  #lecture-menu {
+    display: none;
+  }
+  .inner-content {
+    overflow-y: visible;
+    padding: 0;
+    /* Printout Page Control*/
+    /*Print Styling: Re-styling Visuals*/
+    /*Print Styling: Display Hyperlink Data*/
+    /* add URL info to external links */
+  }
+  .inner-content > div {
+    padding: 0;
+    width: 100%;
+  }
+  .inner-content > div a {
+    color: #000;
+  }
+  .inner-content > div h2 {
+    margin: 0;
+  }
+  .inner-content > div h2:first-child {
+    font-size: 2.2rem;
+    font-weight: 300;
+    margin: 0;
+  }
+  .inner-content > div h2:nth-of-type(7), .inner-content > div h2:nth-of-type(9), .inner-content > div h2:nth-of-type(11),
+  .inner-content > div h2:nth-of-type(12) + .contblock h3:nth-of-type(3), .inner-content > div h2:nth-of-type(16),
+  .inner-content > div h2:nth-of-type(17) + .contblock h3:nth-of-type(3) {
+    page-break-before: always;
+  }
+  .inner-content > div .contblock {
     padding: 0;
   }
-  main .row .col-lg-8 img {
-    width: 95%;
-    padding: 2px;
+  .inner-content > div .contblock:first-of-type a {
+    text-decoration: none;
   }
-  main .row .col-lg-8 h2 {
-    font-size: 20px;
+  .inner-content body {
+    /* floating is not advised for printers */
+    float: none;
+    /* let the printer set margins */
+    width: auto;
+    margin: 0;
+    padding: 0;
+    /* dont display background colors or images */
+    background: none;
   }
-  main .row .col-lg-8 .contblock {
-    padding: 3px;
+  .inner-content a:link,
+  .inner-content a:visited {
+    /* make link text stand out */
+    text-decoration: underline;
+    font-weight: bold;
   }
-}
-
-/*my additions*/
-main{
-  margin-top: -70px;
-
-}
-.container-fluid .col-lg-3{
-  flex: 0 0 66.666667%;
-
-}
-@media screen and (max-width: 651px){
-  main{
-    margin-top: 0px;
-
+  .inner-content a[href^="http"]:after {
+    content: " (URL: " attr(href) ") ";
   }
 }

@@ -57,3 +57,18 @@
     font-size: 17px;
 }
 
+@media screen and (max-width:457px){
+    #content-body ul{
+        padding-left: 10px
+    }
+}
+@media screen and (max-width:457px){
+    #content-head h1{
+        font-size: 2em
+    }
+    #content-head{
+        background-size: cover
+        
+    }
+
+}
